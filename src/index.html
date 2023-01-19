@@ -1,29 +1,49 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Seymour+One&display=swap"
+      rel="stylesheet">
+    <title>Ice cream</title>
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
     <!-- Header -->
-    <include src=""></include>
+    <include src="./partials/header.html"></include>
+    <include src="./partials/mobile-menu.html"></include>
     <!-- Main -->
     <main>
     <!-- Hero -->
-    <include src=""></include>
-    <!-- Section -->
-    <include src=""></include>
-    <!-- Section -->
-    <include src=""></include>
-    <!-- Section -->
-    <include src=""></include>
-    </main>
+    <include src="./partials/hero.html"></include>
+    <!-- 	Products -->
+    <include src="./partials/products.html"></include>
+    <!-- 	About -->
+    <include src="./partials/about.html"></include>
+    <!-- 	Advantages -->
+    <include src="./partials/advantages.html"></include>
+    <!-- 	Gallery -->
+    <include src="./partials/gallery.html"></include>
+    <!-- 	Customer Reviews -->
+    <include src="./partials/reviews.html"></include>
+    <!-- 	Contacts -->
+    <include src="./partials/contacts.html"></include>
+  </main>
     <!-- Footer -->
-    <include src=""></include>
+    <include src="./partials/footer.html"></include>
+    <!-- Modal Product card/ Buy now -->
+    <include src="./partials/modal-product-card.html"></include>
+    <!-- Modal Read more -->
+    <include src="./partials/modal-read-more.html"></include>
+    <!-- Modal Our location -->
+    <include src="./partials/modal-our-location.html"></include>
+    <!-- Modal Franchise -->
+    <include src="./partials/modal-franchise.html"></include>
+    <!-- Modal Ingredients/ Info about product -->
+    <include src="./partials/modal-ingredients.html"></include>
   </body>
 </html>
