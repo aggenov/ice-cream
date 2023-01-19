@@ -1,16 +1,17 @@
-.advant-text-one{
+.advant-item {
     font-weight: 700;
     font-size: 36px;
-    line-height: 44px;
+    line-height: 1.22;
     text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
     color: var(--text-light-color);
 }
-.advant-text-two{
+.advant-text {
     font-weight: 700;
     font-size: 12px;
-    line-height: 170%;
+    line-height: 1.7;
     text-align: center;
     color: var(--text-light-color);
+}
+.advant-skills{
+    text-align: center;
 }
