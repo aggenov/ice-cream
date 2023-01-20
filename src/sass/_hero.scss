@@ -1,9 +1,16 @@
 
 
-@media screen and (min-width: 480px) {
-.hero {
-    padding-top: 50px;
-    padding-left: 20px;
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .hero {
+    padding-top: 38px;
+    height: 357px;
+    position: relative;
     }
 
     .hero-title {
@@ -14,6 +21,10 @@
         line-height: 1.27;
         text-transform: uppercase;
         margin-bottom: 32px;
+    }
+
+    .hero-text-title {
+        font-size: 34px;
     }
 
     .hero-cafes {
@@ -46,7 +57,7 @@
         text-decoration: underline;
     }
 
-    .heto-info {
+    .hero-info {
         display: none;
     }
 
@@ -55,24 +66,24 @@
         background: transparent;
     }
 
-    .hero-img {
-        position: relative;
-        height: 450px;
-        
-    }
-
-    .hero-bg-dots {
-        position: relative;
-        margin-left: 0;
-        margin-right: 0;
-        
-    }
-
     .hero-dots {
-        position:absolute;
-        width: 100vw;
+    position: absolute;
+    width: 330px;
+    height: 52px;
+    bottom: 0;
+    right: 0;
     }
 
+    .hero-bg-ice {
+    position: absolute;
+    background-image: url(../images/hero/mobile.svg);
+    background-repeat: no-repeat;
+    width: 218px;
+    height: 267px;
+    bottom: -50px;
+    right: 20px;
+    
+    }
     
 }
 
