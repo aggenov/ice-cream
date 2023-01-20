@@ -1,15 +1,8 @@
 
 
 @media screen and (max-width: 767px) {
-    .container {
-        max-width: 100%;
-        margin-right: 0;
-        margin-left: 0;
-    }
-
     .hero {
-    padding-top: 38px;
-    height: 357px;
+    height: 450px;
     position: relative;
     }
 
@@ -21,10 +14,11 @@
         line-height: 1.27;
         text-transform: uppercase;
         margin-bottom: 32px;
+        margin-top: 50px;
     }
 
     .hero-text-title {
-        font-size: 34px;
+        font-size: 37px;
     }
 
     .hero-cafes {
@@ -67,27 +61,139 @@
     }
 
     .hero-dots {
-    position: absolute;
-    width: 330px;
-    height: 52px;
-    bottom: 0;
-    right: 0;
+        position: absolute;
+        width: 330px;
+        top: 350px;
+        left: 15px;
     }
 
-    .hero-bg-ice {
-    position: absolute;
-    background-image: url(../images/hero/mobile.svg);
-    background-repeat: no-repeat;
-    width: 218px;
-    height: 267px;
-    bottom: -50px;
-    right: 20px;
-    
-    }
+    // .hero-bg-ice {
+    //     position: absolute;
+    //     background-image: url(../images/hero/mobile.svg);
+    //     background-repeat: no-repeat;
+    //     width: 177px;
+    //     height: 217px;
+    //     left: 100px;
+    //     bottom: 0;
+    // }
     
 }
 
+@media screen and (min-width: 480px) {
+    .hero {
+        padding-top: 38px;
+        height: 458px;
+        position: relative;
+    }
 
+    .hero-button {
+        margin-bottom: 30px;
+    }
+
+    .hero-bg-ice {
+        width: 218px;
+        height: 267px;
+        left: 226px;
+        bottom: -50px;
+    }
+
+    .hero-dots {
+    position: absolute;
+        width: 330px;
+        height: 52px;
+        top: 400px;
+        left: 145px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        padding-top: 14px;
+        height: 349px;
+    }
+
+    .hero-title {
+        width: 247px;
+        font-family: 'Seymour One', sans-serif;
+        color: var(--text-light-color);
+        font-size: 26px;
+        line-height: 1.27;
+        text-transform: uppercase;
+    }
+
+    .hero-text-title {
+        font-size: 37px;
+    }
+
+    .hero-numbers {
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 1.2;
+        color: var(--text-main-color);
+    }
+
+    .hero-text-num {
+        font-size: 8px;
+        line-height: 1.25;
+        color: var(--text-light-color);
+    }
+
+    .hero-cafes {
+        position: absolute;
+        right: 0;
+        top: 5%;
+    }
+
+    .hero-food-court {
+        margin-bottom: 20px;
+    }
+
+    .hero-button {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        margin-bottom: 19px;
+    }
+        
+    .hero-btn {
+        width: 108px;
+        height: 38px;
+        border: 2px solid var(--btn-default-color);
+        border-radius: 8px;
+        background-color: transparent;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.25;
+    }
+
+    .hero-link {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.25;
+        color: var(--btn-default-color);
+        text-decoration: underline;
+    }
+
+    .hero-text {
+        font-size: 12px;
+        line-height: 1.4;
+        color: var(--text-light-color);
+        width: 139px;
+        height: 85px;
+        margin-left: 16px;
+
+    }
+
+    .hero-info {
+        display: flex;
+    }
+
+    .hero-text-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 
 
