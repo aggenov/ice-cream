@@ -1,0 +1,48 @@
+@media screen and(min-width: 320px) {
+  .reviews-style {
+    background-image: url(../images/background-image-ace-cream/backgroud-mobile-1x.png);
+    background-size: cover;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .reviews-style {
+      background-image: url(../images/background-image-ace-cream/backgroud-mobile@2x.png);
+    }
+  }
+}
+
+@media screen and(min-width: 768px) {
+  .reviews-style {
+    background-image: url(../images/background-image-ace-cream/background-tablet-1x.png);
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .reviews-style {
+      background-image: url(../images/background-image-ace-cream/background-tablet-@2x.png);
+    }
+  }
+}
+
+@media screen and(min-width: 1200px) {
+  .reviews-style {
+    background-image: url(../images/background-image-ace-cream/backgroud-desktop-1x.png);
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .reviews-style {
+      background-image: url(../images/background-image-ace-cream/backgroud-desktop-@2x.png);
+    }
+  }
+}
+
+.reviews-image-style {
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}

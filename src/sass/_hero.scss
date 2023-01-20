@@ -1,0 +1,100 @@
+
+
+@media screen and (min-width: 480px) {
+.hero {
+    padding-top: 50px;
+    padding-left: 20px;
+    }
+
+    .hero-title {
+        width: 247px;
+        font-family: 'Seymour One', sans-serif;
+        color: var(--text-light-color);
+        font-size: 26px;
+        line-height: 1.27;
+        text-transform: uppercase;
+        margin-bottom: 32px;
+    }
+
+    .hero-cafes {
+        display: none;
+    }
+
+    .hero-button {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        margin-bottom: 19px;
+    }
+
+    .hero-btn {
+        width: 108px;
+        height: 38px;
+        border: 2px solid var(--btn-default-color);
+        border-radius: 8px;
+        background-color: transparent;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.25;
+    }
+
+    .hero-link {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.25;
+        color: var(--btn-default-color);
+        text-decoration: underline;
+    }
+
+    .heto-info {
+        display: none;
+    }
+
+    .hero-ice-cream {
+        width: 177px;
+        background: transparent;
+    }
+
+    .hero-img {
+        position: relative;
+        height: 450px;
+        
+    }
+
+    .hero-bg-dots {
+        position: relative;
+        margin-left: 0;
+        margin-right: 0;
+        
+    }
+
+    .hero-dots {
+        position:absolute;
+        width: 100vw;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
