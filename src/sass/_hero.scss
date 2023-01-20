@@ -3,7 +3,7 @@
 @media screen and (min-width: 480px) {
 .hero {
     padding-top: 50px;
-    
+    padding-left: 20px;
     }
 
     .hero-title {
@@ -63,13 +63,14 @@
 
     .hero-bg-dots {
         position: relative;
-        width: 100vw;
-        height: 50px;
+        margin-left: 0;
+        margin-right: 0;
+        
     }
 
     .hero-dots {
         position:absolute;
-        height: 50px;
+        width: 100vw;
     }
 
     
