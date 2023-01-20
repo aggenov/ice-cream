@@ -1,0 +1,82 @@
+<button type="button" class="modal-button" data-modal-open>Order Service</button>
+
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" class="close-button" data-modal-close>
+            <svg width="20" height="20">
+                <use href="./images/icons.svg#close"></use>
+            </svg>
+        </button>
+        <h2 class="modal-title">
+            Chololate icecream
+        </h2>
+        <ul class="ingredients-calories-list">
+            <li class="ingredients-calories-item">
+                <p class="ingredients-calories-number">320</p>
+                <p class="ingredients-calories-measure">kcal</p>
+            </li class="ingredients-calories-item">
+            <li class="ingredients-calories-item">
+                <p class="ingredients-calories-number">4g.</p>
+                <p class="ingredients-calories-measure">Prote..</p>
+            </li>
+            <li class="ingredients-calories-item">
+                <p class="ingredients-calories-number">8,2g </p>
+                <p class="ingredients-calories-measure">Fats</p>
+            </li>
+            <li class="ingredients-calories-item">
+                <p class="ingredients-calories-number">40,4g</p>
+                <p class="ingredients-calories-measure">Carbs</p>
+            </li>
+        </ul>
+        <h3 class="ingredients-ingr-title">Ingredients</h3>
+        <ul class="ingredients-ingr-list">
+            <li class="ingredients-ingr-item">
+                <p>Milk</p>
+                <p>100ml</p>
+            </li>
+            <li class="ingredients-ingr-item">
+                <p>Belgian chocolate</p>
+                <p>20g</p>
+            </li>
+            <li class="ingredients-ingr-item">
+                <p>Cream</p>
+                <p>150 ml</p>
+            </li>
+            <li class="ingredients-ingr-item">
+                <p>Cocoa powder</p>
+                <p>30g</p>
+            </li>
+            <li class="ingredients-ingr-item">
+                <p>Sugar</p>
+                <p>40g</p>
+            </li>
+            <li class="ingredients-ingr-item">
+                <p>Vanilla sugar</p>
+                <p>10g</p>
+            </li>
+        </ul>
+        <form class="modal-form">
+            <div class="modal-data">
+                <div class="form-field">
+                    <input type="text" name="name" id="name" placeholder=" " class="modal-input" />
+                    <label for="name" class="modal-label">Name</label>
+                </div>
+                <div class="form-field">
+                    <input type="tel" name="phone" id="phone" placeholder=" " class="modal-input" />
+                    <label for="phone" class="modal-label">Phone</label>
+                </div>
+                <div class="form-field">
+                    <label for="comment" class="textarea-label">Comment</label>
+                    <textarea
+                        name="comment"
+                        id="comment"
+                        rows="5"
+                        placeholder=" "
+                        class="modal-textarea">
+                    </textarea>
+                </div>
+            </div>
+            <button type="submit" class="modal-button">Submit</button>
+        </form>
+        </div>
+    </div>
