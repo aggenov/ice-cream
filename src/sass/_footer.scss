@@ -1,3 +1,31 @@
-_footer_adress {
+
+.footer_adress {
     background-color: --background-main-color;
+}
+
+
+// ---------------------------------------------
+/* 0-767 */
+
+@media screen and (max-width: 767px) {
+    .footer_text {
+font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+        color: rgba(252, 252, 252, 1);
+        padding-top: 60px;
+    }
+
+    .footer_text_passion {                          
+ font-weight: 700;
+font-size: 34px;
+line-height: 41px;
+letter-spacing: 0.04em;
+color: #FCFCFC;
+margin-top: 16px;
+position: absolute;
+font-family: 'Montserrat';
+font-style: normal;
+text-transform: uppercase;
+    }
 }
