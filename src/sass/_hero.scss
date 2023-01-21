@@ -1,0 +1,296 @@
+
+
+@media screen and (max-width: 767px) {
+    .hero-page {
+    height: 450px;
+    position: relative;
+    }
+
+    .hero-title {
+        width: 247px;
+        font-family: 'Seymour One', sans-serif;
+        color: var(--text-light-color);
+        font-size: 26px;
+        line-height: 1.27;
+        text-transform: uppercase;
+        margin-bottom: 32px;
+        margin-top: 50px;
+    }
+
+
+    .hero-text-title {
+        font-size: 37px;
+    }
+
+    .hero-cafes {
+        display: none;
+    }
+
+    .hero-button {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        margin-bottom: 19px;
+    }
+
+    .hero-btn {
+        width: 108px;
+        height: 38px;
+        border: 2px solid var(--btn-default-color);
+        border-radius: 8px;
+        background-color: transparent;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.25;
+    }
+
+    .hero-link {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.25;
+        color: var(--btn-default-color);
+        text-decoration: underline;
+    }
+
+    .hero-info {
+        display: none;
+    }
+
+    .hero-ice-cream {
+        width: 177px;
+        background: transparent;
+    }
+
+        .hero-bg-dots {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+        }
+
+    .hero-bg-ice {
+        position: absolute;
+        bottom: 0;
+        left: 83px;
+        }
+    }
+    
+
+
+@media screen and (min-width: 480px) {
+    .hero-page {
+        height: 458px;
+        position: relative;
+    }
+
+    .hero-button {
+        margin-bottom: 30px;
+    }
+
+    .hero-bg-ice {
+    left: 242px;
+    }
+
+    .hero-bg-dots {
+        position: absolute;
+        bottom: 0;
+        left: 150px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    
+    .hero-page {
+        padding-top: 14px;
+        height: 365px;
+
+    }
+
+    .hero-title {
+        width: 247px;
+        font-family: 'Seymour One', sans-serif;
+        color: var(--text-light-color);
+        font-size: 26px;
+        line-height: 1.27;
+        text-transform: uppercase;
+    }
+
+    .hero-text-title {
+        font-size: 37px;
+    }
+
+    .hero-numbers {
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 1.2;
+        color: var(--text-main-color);
+    }
+
+    .hero-text-num {
+        font-size: 8px;
+        line-height: 1.25;
+        color: var(--text-light-color);
+    }
+
+    .hero-cafes {
+        position: absolute;
+        right: 36px;
+        top: 26px;
+        text-align: right;
+    }
+
+    .hero-food-court {
+        margin-bottom: 20px;
+    }
+
+    .hero-button {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        margin-top: 24px;
+    }
+        
+    .hero-btn {
+        width: 108px;
+        height: 38px;
+        border: 2px solid var(--btn-default-color);
+        border-radius: 8px;
+        background-color: transparent;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.25;
+    }
+
+    .hero-link {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.25;
+        color: var(--btn-default-color);
+        text-decoration: underline;
+    }
+
+    .hero-text {
+        font-size: 12px;
+        line-height: 1.4;
+        color: var(--text-light-color);
+        width: 150px;
+        height: 85px;
+        
+    }
+
+
+    .hero-info-img {
+        position: relative;
+        z-index: 1;
+    }
+
+    .hero-text-info {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        text-align: left;
+    }
+
+    .hero-info {
+        display: flex;
+        gap: 32px;
+    }
+
+    .hero-bg-dots {
+        left: -20px;
+    }
+
+    .hero-bg-ice {
+        position: absolute;
+        left: 390px;
+        top: 34px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero-page {
+        padding-top: 58px;
+        height: 614px;
+}
+
+.hero-title {
+    width: 367px;
+    font-size: 38px;
+    line-height: 1.26;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.28;
+    width: 134px;
+    height: 42px;
+    border-radius: 10px;
+}
+
+.hero-button {
+    gap: 34px;
+    margin-bottom: 42px;
+}
+
+
+.hero-link {
+    font-size: 14px;
+    line-height: 1.21;
+    width: 200px;
+}
+
+.hero-text {
+    font-size: 14px;
+    width: 200px;
+    height: 80px;
+}
+
+.hero-text-info {
+    gap: 32px;
+}
+
+.hero-cafes {
+    top: 88px;
+}
+
+.hero-numbers {
+    font-size: 46px;
+    line-height: 1.2;
+}
+
+.hero-text-num {
+    font-size: 14px;
+}
+
+.hero-bg-dots {
+    bottom: 20px;
+}
+
+.hero-bg-ice {
+left: 652px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

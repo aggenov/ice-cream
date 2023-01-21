@@ -1,0 +1,240 @@
+// ================ABOUT======================================
+// ===============Mobile======================================
+.about{
+    padding-top: 60px;
+    padding-bottom: 50px;
+    background-color: var(--background-main-color);
+    
+}
+
+.about-traditional{
+    margin-bottom: 12px;
+
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.22;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color:var(--text-light-color);
+}
+
+.about-title{
+    margin-left: auto;
+    margin-right: auto;
+    
+    font-family: Seymour One, sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color:var(--text-light-color);
+}
+
+.about-content{
+    margin-top:32px;
+}
+
+.about-img-fon{
+    width: 278px;
+    height: 278px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 62px;
+
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+    border-radius: 49%;
+}
+
+.about-img{
+    border-radius: 50%;
+
+    position: relative;
+    top: 22px; 
+}
+
+
+.about-text{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    
+    max-width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.75;
+
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color:var(--text-light-color);
+}
+
+.button-about-read{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+    min-width: 164px;
+    height: 42px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: var(--btn-default-color);
+    border-radius: 10px;
+    border: none;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.28;    
+}
+
+.imgh{
+    
+    background-color:red;
+    width: 12px;
+    height: 12px;
+    fill: currentColor;
+    padding: 0;
+    margin: 0;
+}
+.svg-icon{
+    fill: currentColor;
+    margin-left: 6px;
+}
+
+.button-about-read:hover{
+    background-color: var(--btn-hover-color);
+    cursor: pointer;
+}
+
+.button-about-read:focus{
+    background-color: var(--btn-hover-color);
+    color:var(--text-light-color);  
+    fill: #D9D9D9;
+         
+}
+
+
+
+@media screen and (max-width:768px) {
+    .about-title{
+        max-width: 200px;  
+    }
+}
+
+// ===============Mobile======================================
+
+//================Tablet======================================
+@media screen and (min-width:768px) {
+    .about-traditional{
+        font-weight: 800;
+        font-size: 22px;
+        line-height: 1.23;
+        letter-spacing: 0.04em;
+    }
+
+    .about-title{
+        font-size: 34px;
+        line-height:1.26;
+        letter-spacing: 0.06em;
+    }
+
+    .about-content{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 38px;
+
+        margin-top: 72px
+    }
+
+    .about-img-fon{
+        width: 330px;
+        height: 330px;
+        margin-bottom:0;
+
+        margin-left: 0; 
+        margin-right: 0;
+        
+    }
+    
+    .about-img{
+        top: 26px;
+    }
+
+    .about-text {
+        max-width: 334px;
+        text-align: left;
+
+        margin-left: 0; 
+        margin-right: 0;
+        padding-top: 8px;
+    }
+
+    .botton-about-read{
+        margin-left: 0;
+    }
+
+    
+    
+}
+
+
+
+
+
+//================Tablet======================================
+
+//================Dasctop======================================
+@media screen and (min-width:1200px) {
+    .about-traditional{
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 1.23;
+    }
+    
+
+    .about-title{
+        font-size: 36px;
+        line-height: 1.25; 
+    }
+    .about-content{
+         gap: 109px;
+
+         margin-top: 82px
+    }
+
+    .about-img-fon {
+        width: 490px;
+        height: 490px;       
+    }
+
+    .about-img{
+        top: 39px;
+    }
+
+    .about-text {
+        max-width: 463px;
+        
+        font-size: 14px;
+        line-height: 1.9;  
+        
+        padding-top: 90px;
+    }
+}
+
+
+
+
+//================Dasctop======================================

@@ -1,0 +1,145 @@
+.advant-item {
+    font-weight: 700;
+    // font-size: 36px;
+    line-height: 1.22;
+    text-align: center;
+    color: var(--text-light-color);
+   
+}
+.advant-text {
+    font-weight: 700;
+    line-height: 1.7;
+    text-align: center;
+    color: var(--text-light-color);
+   
+}
+
+.advant-icon::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: var(--btn-default-color);
+    border-radius: 50%;
+    background-image: url(../images/cow.svg);
+    background-size: 36px 36px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+}
+.advant-icon-weight::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: var(--btn-default-color);
+    border-radius: 50%;
+    background-image: url(../images/weight.svg);
+    background-size: 36px 36px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+}
+.advant-icon-ice::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: var(--btn-default-color);
+    border-radius: 50%;
+    background-image: url(../images/ice.svg);
+    background-size: 36px 36px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+}
+ @media screen and (max-width:767px) {
+    .advant-item{
+        font-size: 36px;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+    }
+        .advant-skills {
+            text-align: center;
+            width: 230px;
+            margin: 0 auto;
+        }
+        .advant-text{
+            font-size: 12px;
+            margin-bottom: 28px;
+        }
+ }
+
+@media screen and (min-width:768px) {
+        .advant-item {
+            font-size: 48px;
+            margin-bottom: 12px;
+    }
+        .advant-skills {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            // width: 152px;
+            margin: 0 auto;
+            gap: 80px;
+        }
+        .advant-text{
+            font-size: 14px;
+            width: 152px;
+            font-weight: 400;
+        }
+        .advant-icon::before{
+            margin-bottom: 32px;
+        }
+        .advant-icon-weight::before{
+            margin-bottom: 32px;
+        }
+        .advant-icon-ice::before{
+            margin-bottom: 32px;
+        }
+}
+
+ 
+
+ @media screen and (min-width:1200px) {
+
+    .advant-item {
+            font-size: 58px;
+            margin-bottom: 12px;
+        }
+
+    .advant-skills {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+    // width: 152px;
+            margin: 0 auto;
+            gap: 32px;
+}
+        .advant-text {
+            font-size: 16px;
+            width: 368px;
+            font-weight: 400;
+        }
+
+        .advant-icon::before {
+                     margin-bottom: 40px;
+                 }
+        
+        .advant-icon-weight::before {
+                     margin-bottom: 40px;
+                 }
+        
+        .advant-icon-ice::before {
+                     margin-bottom: 40px;
+                 }
+
+ }
+
+
