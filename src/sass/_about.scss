@@ -79,6 +79,10 @@
 }
 
 .button-about-read{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
     min-width: 164px;
     height: 42px;
     margin-top: 20px;
@@ -91,25 +95,30 @@
 
     font-weight: 600;
     font-size: 14px;
-    line-height: 1.28;
+    line-height: 1.28;    
+}
+
+.imgh{
+    width: 12px;
+    height: 12px;
+    fill: antiquewhite;
+    padding: 0;
+    margin: 0;
 }
 
 .button-about-read:hover{
     background-color: var(--btn-hover-color);
+    cursor: pointer;
 }
 
 .button-about-read:focus{
     background-color: var(--btn-hover-color);
-    color:var(--text-light-color) ;
+    color:var(--text-light-color);  
+    fill: #D9D9D9;
+         
 }
 
-.button-about-read::after{
-    content: '';
-    width: 12px;
-    height: 12px;
-    margin-left: 4px;
-    background-image: url(#);
-}
+
 
 @media screen and (max-width:768px) {
     .about-title{
