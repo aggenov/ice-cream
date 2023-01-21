@@ -1,15 +1,16 @@
 // ================ABOUT======================================
 // ===============Mobile======================================
 .about{
-    background-color: rgb(152, 173, 57);
     padding-top: 60px;
     padding-bottom: 50px;
+    background-color: var(--background-main-color);
     
 }
 
 .about-traditional{
     margin-bottom: 12px;
 
+    font-family: Montserrat;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.22;
@@ -24,6 +25,7 @@
     margin-left: auto;
     margin-right: auto;
     
+    font-family: Seymour One, sans-serif;
     font-weight: 400;
     font-size: 30px;
     line-height: 38px;
@@ -39,7 +41,7 @@
 }
 
 .about-img-fon{
-    width: 279px;
+    width: 278px;
     height: 278px;
     margin-left: auto;
     margin-right: auto;
