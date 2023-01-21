@@ -8,20 +8,19 @@
 /* 0-767 */
 
 @media screen and (max-width: 767px) {
+
   .footer_text_cream {
     max-width: 232px;
     margin-bottom: 16px;
+    margin-top: 60px;
   }
+
     .footer_text {
       text-transform: uppercase;
-
-font-size: 18px;
-line-height: 1.22;
+      font-size: 18px;
+     line-height: 1.22;
         color: rgba(252, 252, 252, 1);
-        // padding-top: 60px;
-        // font-weight: 700;
-        // width: 232px;
-        // font-style: normal;
+      font-weight: 700;
     }
 
     .footer_text_passion {                          
@@ -38,6 +37,7 @@ text-transform: uppercase;
 max-height: 76px;
     max-width: 200px;
     }
+
     .footer-icon-link {
         display: flex;
         justify-content: center;
@@ -47,30 +47,16 @@ max-height: 76px;
     width: 34px;
     height: 34px;
     }
+    
     .footer-social {
             display: flex;
             gap: 20px;
             margin-top: 60px;  
             padding-left: 158px;
             padding-top: 60px;
-            padding-right: 20px;
-            padding-bottom: 20px;      
+            padding-bottom: 20px;  
+            justify-content: flex-end;    
     }
-//   .footer_contacts_text {
-//     font-style: normal;
-// font-weight: 700;
-// font-size: 12px;
-// line-height: 186%;
-// text-align: right;
-// color: #131313;
-//   } 
-  // .footer_text_link {
-  //   display: flex;
-  //   max-width: 244px;
-  //   height: 22px;
-  //   margin-left: 216px;
-  //   padding-bottom: 40px;
-  // }
 
 .footer_text_link {
   display: flex;
@@ -80,48 +66,129 @@ max-height: 76px;
   line-height: 1.86;
   color: #131313;
 }
+
 .footer_contacts-link {
   color: #FCFCFC;
   margin-left: 3px;
   margin-bottom: 40px;
 }
 
-  // .footer_address {
-  //   font-weight: 700;
-  //   font-size: 14px;
-  //   line-height: 152%;
-  //   text-align: center;
-  //   letter-spacing: 0.02em;
-  //   text-transform: capitalize;
-  //   color: #7A7A7A;
-  //   height: 42px;
-  //   margin-top: 20px;
-  //   display: block;
-  //   justify-content: center;
-  //   margin-bottom: 20px;
-  // }
-  .footer_hr {
-    border: 1px solid #E1E1E1;
-    position: absolute;
-width: 480px;
-height: 0px;
-
-  }
  .footer_address {
   width: 280px;
   font-weight: 700;
   line-height: 1.5;
   text-align: center;
   color: #7A7A7A;
+  font-size: 14px;
+
   padding-top: 0px;
-  padding-right: 20px;
+  padding-right: 50px;
   padding-bottom: 0px;
-  padding-left: 20px;
+  padding-left: 60px;
 }
+
  .footer_coopyright {
+  border-top: 1 px solid #E1E1E1;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: rgba(225, 225, 225, 1);
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 82px;
  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+  .footer_text_cream {
+    max-width: 232px;
+    margin-bottom: 16px;
+    margin-top: 60px;
+  }
+
+    .footer_text {
+      text-transform: uppercase;
+      font-size: 18px;
+     line-height: 1.22;
+        color: rgba(252, 252, 252, 1);
+      font-weight: 700;
+    }
+
+    .footer_text_passion {                          
+ font-weight: 700;
+font-size: 34px;
+line-height: 41px;
+letter-spacing: 0.04em;
+color: #FCFCFC;
+margin-top: 16px;
+position: absolute;
+font-family: 'Montserrat';
+font-style: normal;
+text-transform: uppercase;
+max-height: 76px;
+    max-width: 200px;
+    }
+
+    .footer-icon-link {
+        display: flex;
+        justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #F8D24E;
+    width: 34px;
+    height: 34px;
+    }
+    
+    .footer-social {
+            display: flex;
+            gap: 20px;
+            margin-top: 60px;  
+            padding-left: 158px;
+            padding-top: 60px;
+            padding-bottom: 20px;  
+            justify-content: flex-end;    
+    }
+
+.footer_text_link {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.86;
+  color: #131313;
+}
+
+.footer_contacts-link {
+  color: #FCFCFC;
+  margin-left: 3px;
+  margin-bottom: 40px;
+}
+
+ .footer_address {
+  width: 280px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+  color: #7A7A7A;
+  font-size: 14px;
+
+  padding-top: 0px;
+  padding-right: 50px;
+  padding-bottom: 0px;
+  padding-left: 60px;
+}
+
+ .footer_coopyright {
+  border-top: 1 px solid #E1E1E1;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: rgba(225, 225, 225, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 82px;
+ }
+  
 }
