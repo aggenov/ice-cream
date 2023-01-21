@@ -40,8 +40,7 @@ text-transform: uppercase;
     .footer-social {
             display: flex;
             gap: 20px;
-            margin-top: 60px;  
-            padding-left: 158px;      
+            margin-top: 60px;        
     }
   .footer_contacts_text {
     font-style: normal;
@@ -58,5 +57,10 @@ color: #131313;
     margin-left: 216px;
     padding-bottom: 40px;
   }
-
+  .footer_icon {
+  padding-top: 60px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 318px;
+  }
 }
