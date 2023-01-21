@@ -12,13 +12,20 @@
     <title>Ice cream</title>
     <link href="./images/ico-favicon.png" rel="icon" />
     <link href="./images/ico-favicon.png" rel="apple-touch-icon" />
+<<<<<<< HEAD
+=======
     <!-- підключення слайдера -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
+>>>>>>> 508ab865b850e53fe1641ad4b1956c9341477842
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!-- Header -->
@@ -53,17 +60,36 @@
     <include src="./partials/modal-franchise.html"></include>
     <!-- Modal Ingredients/ Info about product -->
     <include src="./partials/modal-ingredients.html"></include>
-    <!-- script for slider -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
+    <!-- scripts for gallery -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
-      var swiper = new Swiper('.mySwiper', {
+      var swiper = new Swiper('.mySwiper2', {
         spaceBetween: 30,
-        effect: 'fade',
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
         },
+
+      });
+    </script>
+ 
+ <!-- script for slider -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  
+  <script>
+    var swiper = new Swiper('.mySwiper', {
+      spaceBetween: 30,
+      effect: 'fade',
         pagination: {
           el: '.swiper-pagination',
           type: 'bullets',
@@ -78,5 +104,6 @@
     </script>
 
     <script src="./js/mobile-menu.js"></script>
+
   </body>
 </html>
