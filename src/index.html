@@ -3,14 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Seymour+One&display=swap"
-      rel="stylesheet">
+      rel="stylesheet"
+    />
     <title>Ice cream</title>
-    <link href="./images/ico-favicon.png" rel="icon">
-    <link href="./images/ico-favicon.png" rel="apple-touch-icon">
+    <link href="./images/ico-favicon.png" rel="icon" />
+    <link href="./images/ico-favicon.png" rel="apple-touch-icon" />
+    <!-- підключення слайдера -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
@@ -20,21 +26,21 @@
     <include src="./partials/mobile-menu.html"></include>
     <!-- Main -->
     <main>
-    <!-- Hero -->
-    <include src="./partials/hero.html"></include>
-    <!-- 	Products -->
-    <include src="./partials/products.html"></include>
-    <!-- 	About -->
-    <include src="./partials/about.html"></include>
-    <!-- 	Advantages -->
-    <include src="./partials/advantages.html"></include>
-    <!-- 	Gallery -->
-    <include src="./partials/gallery.html"></include>
-    <!-- 	Customer Reviews -->
-    <include src="./partials/reviews.html"></include>
-    <!-- 	Contacts -->
-    <include src="./partials/contacts.html"></include>
-  </main>
+      <!-- Hero -->
+      <include src="./partials/hero.html"></include>
+      <!-- 	Products -->
+      <include src="./partials/products.html"></include>
+      <!-- 	About -->
+      <include src="./partials/about.html"></include>
+      <!-- 	Advantages -->
+      <include src="./partials/advantages.html"></include>
+      <!-- 	Gallery -->
+      <include src="./partials/gallery.html"></include>
+      <!-- 	Customer Reviews -->
+      <include src="./partials/reviews.html"></include>
+      <!-- 	Contacts -->
+      <include src="./partials/contacts.html"></include>
+    </main>
     <!-- Footer -->
     <include src="./partials/footer.html"></include>
     <!-- Modal Product card/ Buy now -->
@@ -47,6 +53,30 @@
     <include src="./partials/modal-franchise.html"></include>
     <!-- Modal Ingredients/ Info about product -->
     <include src="./partials/modal-ingredients.html"></include>
+    <!-- script for slider -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        spaceBetween: 30,
+        effect: 'fade',
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+          clickable: true,
+        },
+        effect: 'flip',
+        flipEffect: {
+          slideShadows: true,
+          limitRotation: true,
+        },
+      });
+    </script>
+
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

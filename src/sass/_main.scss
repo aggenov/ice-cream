@@ -31,6 +31,7 @@ a {
     text-decoration: none;
 }
 
+
 ul {
     list-style: none;
     margin: 0;
@@ -41,4 +42,20 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+
+button {
+    border-color: var(--btn-default-color);
+    cursor: pointer;
+}
+button:hover {
+    border-color: var(--btn-hover-color);
+}
+button:focus {
+    border-color: var(--btn-focus-color);
+    color: var(--text-light-color);
+}
+button:disabled {
+    border-color: var(--btn-default-color);
 }
