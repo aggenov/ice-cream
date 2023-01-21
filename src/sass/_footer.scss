@@ -11,9 +11,11 @@
     .footer_text {
 font-weight: 700;
 font-size: 18px;
-line-height: 22px;
         color: rgba(252, 252, 252, 1);
         padding-top: 60px;
+        line-height: 1.22;
+        max-width: 232px;
+        font-style: normal;
     }
 
     .footer_text_passion {                          
@@ -27,6 +29,8 @@ position: absolute;
 font-family: 'Montserrat';
 font-style: normal;
 text-transform: uppercase;
+max-height: 76px;
+    max-width: 200px;
     }
     .footer-icon-link {
         display: flex;
@@ -62,5 +66,19 @@ color: #131313;
     padding-right: 20px;
     padding-bottom: 20px;
     padding-left: 318px;
+  }
+  .footer_address {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 152%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #7A7A7A;
+    height: 42px;
+    margin-top: 20px;
+    display: block;
+    justify-content: center;
+    margin-bottom: 20px;
   }
 }
