@@ -11,11 +11,11 @@
 
     transition: opacity 200ms linear, visibility 200ms linear;
 }
-// .backdrop.is-hidden{
-//     opacity: 1;
-//     visibility: hidden;
-//     pointer-events: none;
-// }
+.backdrop.is-hidden{
+    opacity: 1;
+    visibility: hidden;
+    pointer-events: none;
+}
 
 .modal-read-more{
     position: absolute;
@@ -41,24 +41,22 @@
    }
 }
 
-.backdrop.is-hidden .modal{
+.backdrop.is-hidden-read .modal{
 transform: translate(-50%, -50%);  
 }
 
 
-.close-button{
+.close-button-read{
 position: absolute;
-top: 8px;
-right: 5px;
-
+top: 12px;
+right: 12px;
+background: #FCFCFC;
 display: flex;
 align-items: center;
 justify-content: center;
 width: 20px;
 height: 20px;
 padding: 0;
-
-background: #FFFFFF;
 border: none;
 
 }
