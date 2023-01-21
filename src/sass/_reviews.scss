@@ -1,0 +1,108 @@
+@media screen and(min-width: 320px) {
+  .reviews-style {
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 84px;
+    background-image: url(../images/background-image-ace-cream/backgroud-mobile-1x.png);
+    background-size: cover;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .reviews-style {
+      background-image: url(../images/background-image-ace-cream/backgroud-mobile@2x.png);
+    }
+  }
+}
+
+@media screen and(min-width: 768px) {
+  .reviews-style {
+    padding-top: 100px;
+    padding-bottom: 124px;
+    background-image: url(../images/background-image-ace-cream/background-tablet-1x.png);
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .reviews-style {
+      background-image: url(../images/background-image-ace-cream/background-tablet-@2x.png);
+    }
+  }
+}
+
+@media screen and(min-width: 1200px) {
+  .reviews-style {
+    padding-top: 140px;
+    padding-bottom: 144px;
+    background-image: url(../images/background-image-ace-cream/backgroud-desktop-1x.png);
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .reviews-style {
+      background-image: url(../images/background-image-ace-cream/backgroud-desktop-@2x.png);
+    }
+  }
+}
+
+.reviews-image-style {
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+}
+
+.review-main-text {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+  text-align: center;
+
+  color: var(--text-light-color);
+  background-color: var(--background-main-color);
+}
+
+.review-second-text {
+  line-height: 1.86;
+  font-weight: 500;
+  text-align: center;
+}
+
+@media screen and(min-width: 320px) and (max-width: 767px) {
+  .review-main-text {
+    width: 280px;
+    padding: 35px 39px;
+    font-size: 12px;
+    line-height: 2.55;
+    border-radius: 10px;
+  }
+  .review-second-text {
+    font-size: 20px;
+  }
+}
+@media screen and(min-width: 768px) {
+  .review-main-text {
+    width: 705px;
+    padding: 28px 80px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    border-radius: 24px;
+  }
+  .review-second-text {
+    font-size: 16px;
+  }
+}
+@media screen and(min-width: 1200px) {
+  .review-main-text {
+    width: 968px;
+    min-height: 138px;
+    padding: 43px 109px;
+
+    font-size: 16px;
+  }
+}
