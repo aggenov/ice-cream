@@ -17,7 +17,7 @@
     text-align: center;
     text-transform: uppercase;
 
-    color: #FCFCFC;
+    color:var(--text-light-color);
 }
 
 .about-title{
@@ -31,7 +31,7 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
 
-    color: #FCFCFC;
+    color:var(--text-light-color);
 }
 
 .about-content{
@@ -51,8 +51,6 @@
 }
 
 .about-img{
-        
-    background-color: chocolate;
     border-radius: 50%;
 
     position: relative;
@@ -77,17 +75,17 @@
     text-align: center;
     letter-spacing: 0.04em;
 
-    color: #FCFCFC;
+    color:var(--text-light-color);
 }
 
-.botton-about-read{
+.button-about-read{
     min-width: 164px;
     height: 42px;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
 
-    background: #F8D24E;
+    background-color: var(--btn-default-color);
     border-radius: 10px;
     border: none;
 
@@ -96,7 +94,16 @@
     line-height: 1.28;
 }
 
-.botton-about-read::after{
+.button-about-read:hover{
+    background-color: var(--btn-hover-color);
+}
+
+.button-about-read:focus{
+    background-color: var(--btn-hover-color);
+    color:var(--text-light-color) ;
+}
+
+.button-about-read::after{
     content: '';
     width: 12px;
     height: 12px;
