@@ -35,12 +35,12 @@
     overflow-y: scroll;
 }
 
-.is-hidden {
+.is-hidden-ingr {
     opacity: 0;
     pointer-events: none;
 }
 
-.is-hidden .modal {
+.is-hidden-ingr .modal {
     transform: scale(0.9);
 }
 
