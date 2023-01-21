@@ -1,3 +1,24 @@
+
+.modal-prod-button {
+    text-align: center;
+
+    cursor: pointer;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+
+    background-color: transparent;
+    border: none;
+
+    transform: scale(1);
+    transition: transform var(--duration-time) var(--timing-function);
+}
+
+.modal-prod-button:hover,
+.modal-prod-button:focus {
+    transform: scale(1.1);
+}
 .backrop {
     position: fixed;
     top: 0;
@@ -47,6 +68,28 @@
         margin-bottom: 32px auto 40px auto;
     }
 
+}
+.product-card-modal-close-btn {
+position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    top: 12px;
+    right: 12px;
+
+    cursor: pointer;
+
+    background-color: transparent;
+    border: none;
+
+    transform: scale(1);
+    transition: transform var(--duration-time) var(--timing-function);
+}
+.product-card-modal-close-btn:hover,
+.product-card-modal-close-btn:focus {
+    transform: scale(1.1);
 }
 
 .product-card-modal-list {
@@ -247,6 +290,10 @@
     .product-card-modal-form button {
         margin-bottom: 32px;
     }
+}
+.is-hidden-prod {
+    opacity: 0;
+    pointer-events: none;
 }
 
 .franchise-modal {
