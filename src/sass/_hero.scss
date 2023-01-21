@@ -1,9 +1,18 @@
+.hero {
+    background-color: var(--background-main-color);
+}
+
 
 
 @media screen and (max-width: 767px) {
+
+.hero {
+    position: relative;
+}
+
     .hero-page {
     height: 450px;
-    position: relative;
+    // position: relative;
     }
 
     .hero-title {
@@ -14,7 +23,7 @@
         line-height: 1.27;
         text-transform: uppercase;
         margin-bottom: 32px;
-        margin-top: 50px;
+        padding-top: 50px;
     }
 
 
@@ -78,9 +87,13 @@
 
 
 @media screen and (min-width: 480px) {
+    .hero {
+        position: relative;
+    }
+
     .hero-page {
         height: 458px;
-        position: relative;
+        // position: relative;
     }
 
     .hero-button {
@@ -99,7 +112,10 @@
 }
 
 @media screen and (min-width: 768px) {
+    .hero {
+        position: relative;
     
+    }
     .hero-page {
         padding-top: 14px;
         height: 365px;
@@ -134,8 +150,8 @@
 
     .hero-cafes {
         position: absolute;
-        right: 36px;
-        top: 26px;
+        top: 32px;
+        right: 38px;
         text-align: right;
     }
 
@@ -148,6 +164,7 @@
         gap: 12px;
         align-items: center;
         margin-top: 24px;
+        margin-top: 12px;
     }
         
     .hero-btn {
@@ -198,17 +215,21 @@
     }
 
     .hero-bg-dots {
-        left: -20px;
+        left: 0;
     }
 
     .hero-bg-ice {
         position: absolute;
-        left: 390px;
+        left: 408px;
         top: 34px;
     }
 }
 
 @media screen and (min-width: 1200px) {
+    .hero {
+        position: relative;
+    }
+
     .hero-page {
         padding-top: 58px;
         height: 614px;
@@ -230,6 +251,21 @@
     border-radius: 10px;
 }
 
+.hero-btn:hover {
+    border: var(--btn-hover-color);
+
+    cursor: pointer;
+}
+
+.hero-btn:focus {
+    border: 2px solid var(--btn-hover-color);
+    color: var(--text-light-color);
+}
+
+.hero-btn:disabled {
+    border: var(--text-light-color)
+}
+
 .hero-button {
     gap: 34px;
     margin-bottom: 42px;
@@ -241,6 +277,16 @@
     line-height: 1.21;
     width: 200px;
 }
+
+.hero-link:hover {
+    color: var(--btn-hover-color);
+}
+
+.hero-link:focus {
+    color: var(--text-light-color);
+}
+
+
 
 .hero-text {
     font-size: 14px;
@@ -266,11 +312,13 @@
 }
 
 .hero-bg-dots {
-    bottom: 20px;
+    bottom: 0;
+    left: 0;
 }
 
 .hero-bg-ice {
-left: 652px;
+    left: 652px;
+    top: 56px;
 }
 }
 
