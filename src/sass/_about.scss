@@ -102,12 +102,16 @@
 
 .imgh{
     
-    background-color: aquamarine;
-    width: 22px;
+    background-color:red;
+    width: 12px;
     height: 12px;
-    fill: red;
+    fill: currentColor;
     padding: 0;
     margin: 0;
+}
+.svg-icon{
+    fill: currentColor;
+    margin-left: 6px;
 }
 
 .button-about-read:hover{
