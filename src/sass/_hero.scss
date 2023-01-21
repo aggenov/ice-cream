@@ -1,7 +1,7 @@
 
 
 @media screen and (max-width: 767px) {
-    .hero {
+    .hero-page {
     height: 450px;
     position: relative;
     }
@@ -16,6 +16,7 @@
         margin-bottom: 32px;
         margin-top: 50px;
     }
+
 
     .hero-text-title {
         font-size: 37px;
@@ -60,28 +61,24 @@
         background: transparent;
     }
 
-    .hero-dots {
-        position: absolute;
-        width: 330px;
-        top: 350px;
-        left: 15px;
-    }
+        .hero-bg-dots {
+            position: absolute;
+            bottom: 0;
+            left: 0;
 
-    // .hero-bg-ice {
-    //     position: absolute;
-    //     background-image: url(../images/hero/mobile.svg);
-    //     background-repeat: no-repeat;
-    //     width: 177px;
-    //     height: 217px;
-    //     left: 100px;
-    //     bottom: 0;
-    // }
+        }
+
+    .hero-bg-ice {
+        position: absolute;
+        bottom: 0;
+        left: 83px;
+        }
+    }
     
-}
+
 
 @media screen and (min-width: 480px) {
-    .hero {
-        padding-top: 38px;
+    .hero-page {
         height: 458px;
         position: relative;
     }
@@ -91,25 +88,22 @@
     }
 
     .hero-bg-ice {
-        width: 218px;
-        height: 267px;
-        left: 226px;
-        bottom: -50px;
+    left: 242px;
     }
 
-    .hero-dots {
-    position: absolute;
-        width: 330px;
-        height: 52px;
-        top: 400px;
-        left: 145px;
+    .hero-bg-dots {
+        position: absolute;
+        bottom: 0;
+        left: 150px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .hero {
+    
+    .hero-page {
         padding-top: 14px;
-        height: 349px;
+        height: 365px;
+
     }
 
     .hero-title {
@@ -140,8 +134,9 @@
 
     .hero-cafes {
         position: absolute;
-        right: 0;
-        top: 5%;
+        right: 36px;
+        top: 26px;
+        text-align: right;
     }
 
     .hero-food-court {
@@ -152,7 +147,7 @@
         display: flex;
         gap: 12px;
         align-items: center;
-        margin-bottom: 19px;
+        margin-top: 24px;
     }
         
     .hero-btn {
@@ -178,21 +173,105 @@
         font-size: 12px;
         line-height: 1.4;
         color: var(--text-light-color);
-        width: 139px;
+        width: 150px;
         height: 85px;
-        margin-left: 16px;
-
+        
     }
 
-    .hero-info {
-        display: flex;
+
+    .hero-info-img {
+        position: relative;
+        z-index: 1;
     }
 
     .hero-text-info {
         display: flex;
         justify-content: center;
-        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        text-align: left;
     }
+
+    .hero-info {
+        display: flex;
+        gap: 32px;
+    }
+
+    .hero-bg-dots {
+        left: -20px;
+    }
+
+    .hero-bg-ice {
+        position: absolute;
+        left: 390px;
+        top: 34px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero-page {
+        padding-top: 58px;
+        height: 614px;
+}
+
+.hero-title {
+    width: 367px;
+    font-size: 38px;
+    line-height: 1.26;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.28;
+    width: 134px;
+    height: 42px;
+    border-radius: 10px;
+}
+
+.hero-button {
+    gap: 34px;
+    margin-bottom: 42px;
+}
+
+
+.hero-link {
+    font-size: 14px;
+    line-height: 1.21;
+    width: 200px;
+}
+
+.hero-text {
+    font-size: 14px;
+    width: 200px;
+    height: 80px;
+}
+
+.hero-text-info {
+    gap: 32px;
+}
+
+.hero-cafes {
+    top: 88px;
+}
+
+.hero-numbers {
+    font-size: 46px;
+    line-height: 1.2;
+}
+
+.hero-text-num {
+    font-size: 14px;
+}
+
+.hero-bg-dots {
+    bottom: 20px;
+}
+
+.hero-bg-ice {
+left: 652px;
+}
 }
 
 
