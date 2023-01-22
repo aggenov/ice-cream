@@ -11,7 +11,16 @@
   gap: 16px;
   align-items: center;
 }
+@media screen and (min-width: 320px) {
+  .contacts-wrapper-cards {
+    display: flex;
+    // flex-wrap: wrap;
+    width: 100%;
+  }
 
+  .contacts-wrapper {
+    max-width: 280px;
+  }
 @media screen and (min-width: 768px) {
   .contacts-wrapper-cards {
     // display: flex;
@@ -33,16 +42,16 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) {
   .contacts-wrapper-cards {
-    // display: flex;
-
-    // width: 100%;
-    flex-direction: column;
+    display: flex;
+    // flex-wrap: wrap;
+    width: 100%;
   }
   .contacts-wrapper {
-    width: 280px;
+    max-width: 280px;
   }
+
   .contacts-main-buttons {
     flex-wrap: wrap;
     margin-top: 60px;
