@@ -251,6 +251,8 @@
     width: 134px;
     height: 42px;
     border-radius: 10px;
+    position: relative;
+    z-index: 2;
 }
 
 .hero-btn:hover {
@@ -275,6 +277,8 @@
     font-size: 14px;
     line-height: 1.21;
     width: 200px;
+    position: relative;
+    z-index: 2;
 }
 
 .hero-link:hover {
