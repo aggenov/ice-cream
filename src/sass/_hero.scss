@@ -254,19 +254,16 @@
 }
 
 .hero-btn:hover {
-    border: var(--btn-hover-color);
-
+    border-color: var(--btn-hover-color);
     cursor: pointer;
 }
 
 .hero-btn:focus {
-    border: 2px solid var(--btn-hover-color);
+    border-color: 2px solid var(--btn-hover-color);
     color: var(--text-light-color);
 }
 
-.hero-btn:disabled {
-    border: var(--text-light-color)
-}
+
 
 .hero-button {
     gap: 34px;
@@ -298,6 +295,7 @@
 
 .hero-text-info {
     gap: 32px;
+    padding-top: 32px;
 }
 
 .hero-cafes {

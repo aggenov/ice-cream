@@ -13,7 +13,10 @@
     <link href="./images/ico-favicon.png" rel="icon" />
     <link href="./images/ico-favicon.png" rel="apple-touch-icon" />
     <!-- підключення слайдера -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
 
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
@@ -70,21 +73,24 @@
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
         },
-
       });
     </script>
- 
- <!-- script for slider -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  
-  <script>
-    var swiper = new Swiper('.mySwiper', {
-      spaceBetween: 30,
-      effect: 'fade',
+
+    <!-- script for slider -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        spaceBetween: 30,
+        effect: 'fade',
         pagination: {
           el: '.swiper-pagination',
           type: 'bullets',
           clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
         },
         effect: 'flip',
         flipEffect: {
@@ -95,6 +101,5 @@
     </script>
 
     <script src="./js/mobile-menu.js"></script>
-
   </body>
 </html>
