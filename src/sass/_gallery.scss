@@ -1,13 +1,17 @@
+.gallery {
+  height: 81px;
+}
+
 .for-position-relative {
   position: relative;
 }
 
 .box-for-slider {
   position: absolute;
-  top: -49px;
+  top: -32px;
   left: 50%;
   transform: translate(-50%, 0);
-
+  z-index: 200;
   display: block;
   max-width: 100%;
   margin-left: auto;
@@ -26,13 +30,13 @@
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background: transparent;
 }
 
 .swiper-slide img {
   display: block;
-  width: 100%;
-  height: 100%;
+  // width: 100%;
+  // height: 100%;
   object-fit: cover;
 }
 
@@ -40,8 +44,12 @@
 // styles for TABLET
 
 @media screen and (min-width: 768px) {
+  .gallery {
+      height: 204px;
+    }
   .box-for-slider {
-    top: -114px;
+    top: 60px;
+    z-index: 200;
   }
   .swiper {
     border-radius: 20px;
@@ -51,8 +59,12 @@
 // styles for LAPTOP
 
 @media screen and (min-width: 1200px) {
+  .gallery {
+      height: 178px;
+    }
   .box-for-slider {
-    top: -98px;
+    top: 80px;
+    z-index: 200;
     padding-left: 78px;
     padding-right: 78px;
   }

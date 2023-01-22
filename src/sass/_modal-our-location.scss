@@ -1,0 +1,151 @@
+.modal-location-button {
+    text-align: center;
+
+    cursor: pointer;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+
+    background-color: transparent;
+    border: none;
+
+    transform: scale(1);
+    transition: transform var(--duration-time) var(--timing-function);
+}
+
+.modal-location-button:hover,
+.modal-location-button:focus {
+    transform: scale(1.1);
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px 20px;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(46, 47, 66, 0.4);;
+
+    transition: opacity var(--duration-time) var(--timing-function);
+
+    overflow-y: scroll;
+}
+
+.is-hidden-location {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.is-hidden-location .modal-location {
+    transform: scale(0.9);
+}
+
+.modal-location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 28px;
+
+    background-color: var(--text-light-color);
+    border: 2px solid var(--btn-default-color);
+    border-radius: 10px;
+
+    transform: scale(1);
+    transition: transform var(--duration-time) var(--timing-function);
+}
+
+@media screen and (min-width: 480px) {
+    .modal-location {
+        position: absolute;
+        top: 30px;
+        left: 50%;
+        transform: translateX(-50%) scale(1);
+        width: 440px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .modal-location {
+        width: 568px;
+        padding: 32px 60px;
+    }
+}
+
+.modal-location-title {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+
+    font-family: 'Seymour One';
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .modal-location-title {
+        margin-bottom: 34px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .modal-location-title {
+        margin-bottom: 32x;
+        font-size: 20px;
+        line-height: 1.4;
+    }
+}
+
+.map-location {
+    width: 100%;
+    min-height: 199px;
+    margin-bottom: 24px;
+
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .map-location {
+        min-height: 260px;
+        margin-bottom: 32px;
+    }
+}
+
+.location-button {
+    padding: 12px 34px;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+
+    background-color: var(--btn-default-color);
+    color: var(--text-main-color);
+    border: none;
+    border-radius: 10px;
+
+    transition: background-color var(--duration-time) var(--timing-function),
+                color var(--duration-time) var(--timing-function);
+}
+
+.location-button:hover,
+.location-button:focus {
+    background-color: var(--btn-hover-color);
+    color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+    .location-button {
+        font-size: 14px;
+        line-height: 1,21;
+    }
+}

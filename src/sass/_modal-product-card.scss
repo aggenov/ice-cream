@@ -1,0 +1,404 @@
+
+.modal-prod-button {
+    text-align: center;
+
+    cursor: pointer;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+
+    background-color: transparent;
+    border: none;
+
+    transform: scale(1);
+    transition: transform var(--duration-time) var(--timing-function);
+}
+
+.modal-prod-button:hover,
+.modal-prod-button:focus {
+    transform: scale(1.1);
+}
+.backrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+}
+
+.product-card-modal-container {
+    position: absolute;
+    transform: translate(-50%, -50%) scale(1);
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    background-color: var(--text-light-color);
+    border: 2px solid var(--btn-default-color);
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 320px) {
+    .product-card-modal-container {
+        width: 280px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .product-card-modal-container {
+        width: 568px;
+    }
+}
+
+.product-card-modal-h2 {
+    font-family: 'Seymour One', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    margin: 28px auto 20px auto;
+}
+
+@media screen and (min-width: 768px) {
+    .product-card-modal-h2 {
+        font-size: 20px;
+        line-height: 1.4;
+        margin-bottom: 32px auto 40px auto;
+    }
+
+}
+.product-card-modal-close-btn {
+position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    top: 12px;
+    right: 12px;
+
+    cursor: pointer;
+
+    background-color: transparent;
+    border: none;
+
+    transform: scale(1);
+    transition: transform var(--duration-time) var(--timing-function);
+}
+.product-card-modal-close-btn:hover,
+.product-card-modal-close-btn:focus {
+    transform: scale(1.1);
+}
+
+.product-card-modal-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .product-card-modal-list {
+        flex-direction: row;
+        gap: 32px;
+        margin-bottom: 40px;
+    }
+}
+
+.product-card-modal-list label {
+    position: relative;
+    width: 132px;
+    height: 200px;
+}
+
+.product-card-modal-list img {
+    position: relative;
+    z-index: 999;
+    border-radius: 50%;
+    margin-bottom: 26px;
+}
+
+.product-card-modal-circle {
+    position: absolute;
+    top: 7px;
+    right: 0;
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    z-index: 900;
+}
+
+.cirle-cream {
+    background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+
+.cirle-coffe {
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+}
+
+.cirle-milkshake {
+    background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+}
+
+.product-card-modal-frame {
+    position: absolute;
+    top: 63px;
+    right: 0;
+    width: 132px;
+    height: 136px;
+    border-radius: 15px;
+}
+
+.frame-crema {
+    border: 2px solid #96AF8C;
+}
+
+.frame-coffe {
+    border: 2px solid var(--background-card-color-coffee);
+}
+
+.frame-milkshake {
+    border: 2px solid var(--background-card-color-milkshakes);
+}
+
+.product-card-modal-description {
+    display: block;
+    position: relative;
+    z-index: 999;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-main-color);
+}
+
+.product-card-modal-check:checked+.frame-crema {
+    background-color: #96AF8C;
+    box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+}
+
+.product-card-modal-check:checked+.frame-coffe {
+    background-color: var(--background-card-color-coffee);
+    box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+}
+
+.product-card-modal-check:checked+.frame-milkshake {
+    box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+    background-color: var(--background-card-color-milkshakes);
+}
+
+.product-card-modal-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+@media screen and (min-width: 768px) {
+    .product-card-modal-form {
+        gap: 16px;
+    }
+}
+
+.product-card-modal-form input {
+    width: 100%;
+    height: 32px;
+    padding-left: 12px;
+    background-color: rgba(248, 210, 78, 0.1);
+    border: 1px solid var(--background-main-color);
+    border-radius: 10px;
+    outline: none;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+}
+
+.product-card-modal-form input:not(:placeholder-shown):required:invalid {
+    border-color: red;
+}
+
+@media screen and (min-width: 320px) {
+    .product-card-modal-form input {
+        width: 224px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .product-card-modal-form input {
+        width: 368px;
+        height: 42px;
+    }
+}
+
+.product-card-modal-form textarea {
+    width: 100%;
+    height: 65px;
+    padding-left: 12px;
+    padding-top: 8px;
+    background-color: rgba(248, 210, 78, 0.1);
+    border: 1px solid var(--background-main-color);
+    border-radius: 10px;
+    outline: none;
+    resize: none;
+    margin: 0 auto 14px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+}
+
+@media screen and (min-width: 320px) {
+    .product-card-modal-form textarea {
+        width: 224px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .product-card-modal-form textarea {
+        width: 368px;
+        height: 84px;
+        padding-top: 11px;
+    }
+}
+
+.product-card-modal-form button {
+    background: var(--btn-default-color);
+    border-radius: 10px;
+    padding: 12px 34px;
+    border: none;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--text-main-color);
+    text-align: center;
+    margin-bottom: 29px;
+}
+
+@media screen and (min-width: 768px) {
+    .product-card-modal-form button {
+        margin-bottom: 32px;
+    }
+}
+.is-hidden-prod {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.franchise-modal {
+    position: absolute;
+    transform: translate(-50%, -50%) scale(1);
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    max-width: 280px;
+    background-color: var(--text-light-color);
+    border: 2px solid var(--btn-default-color);
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.franchise-modal-h2 {
+    width: 100%;
+    max-width: 226px;
+    text-align: center;
+    font-family: 'Seymour One', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 28px auto 20px auto;
+}
+
+.franchise-modal p {
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: var(--text-main-color);
+    margin: 0 auto 24px;
+}
+
+@media screen and (min-width: 320px) {
+    .franchise-modal p {
+        width: 222px;
+    }
+}
+
+.franchise-modal-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.franchise-modal-form input {
+    width: 100%;
+    height: 32px;
+    padding-left: 12px;
+    background-color: rgba(248, 210, 78, 0.1);
+    border: 1px solid var(--background-main-color);
+    border-radius: 10px;
+    outline: none;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+}
+
+.franchise-modal-form input:not(:placeholder-shown):required:invalid {
+    border-color: red;
+}
+
+@media screen and (min-width: 320px) {
+    .franchise-modal-form input {
+        width: 224px;
+    }
+}
+
+.franchise-modal-form textarea {
+    width: 100%;
+    height: 65px;
+    padding-left: 12px;
+    padding-top: 8px;
+    background-color: rgba(248, 210, 78, 0.1);
+    border: 1px solid var(--background-main-color);
+    border-radius: 10px;
+    outline: none;
+    resize: none;
+    margin: 0 auto 16px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+}
+
+@media screen and (min-width: 320px) {
+    .franchise-modal-form textarea {
+        width: 224px;
+    }
+}
+
+.franchise-modal-form button {
+    background: var(--btn-default-color);
+    border-radius: 10px;
+    padding: 12px 34px;
+    border: none;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--text-main-color);
+    text-align: center;
+    margin-bottom: 28px;
+}
