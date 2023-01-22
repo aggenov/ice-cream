@@ -3,36 +3,49 @@
 }
 
 .contacts-wrapper-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(368px, 1fr));
+  display: flex;
+  width: calc(100% - 32px);
+  gap: 16px;
+  justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
   .contacts-wrapper-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 221px);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 32px);
     gap: 16px;
-    padding: 24px;
-    margin: 0 auto;
+    justify-content: center;
+    margin-left: 0;
+  }
+  .contacts-wrapper {
+    max-width: 224px;
   }
 }
 
 @media screen and (min-width: 320px) {
   .contacts-wrapper-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    margin-left: 12px;
-    margin-right: 12px;
-    gap: 16px;
+    display: flex;
+    // flex-wrap: wrap;
+    width: 100%;
   }
+  .contacts-wrapper {
+    max-width: 280px;
+  }
+
   .contacts-main-buttons {
-    display: grid;
-    grid-template-columns: repeat(1, 196px);
-    gap: 16px;
+    // display: grid;
+    // grid-template-columns: repeat(1, 196px);
+    // display: flex;
+    // justify-content: center;
+    flex-wrap: wrap;
+    // gap: 16px;
     margin-top: 60px;
     padding-bottom: 120px;
-    margin-left: 65px;
-    margin-right: 65px;
+    // margin-left: 65px;
+    // margin-right: 65px;
     align-items: center;
   }
 }
@@ -93,12 +106,20 @@
   padding-bottom: 32px;
 }
 
+.start {
+  padding-top: 12px;
+}
+
 .contacts-working-days {
   font-family: 'Montserrat';
   font-weight: 500;
   font-size: 16px;
   line-height: 29.28px;
   color: #131313;
+}
+
+.contacts-working-days .start {
+  margin-top: 12px;
 }
 
 .contacts-working-hours {
@@ -115,11 +136,14 @@
   font-size: 16px;
   line-height: 29.28px;
   color: #131313;
+  font-style: normal;
 }
 
 .contacts-main-buttons {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(196px, 1fr));
+  // display: grid;
+  // grid-template-columns: repeat(auto-fit, minmax(196px, 1fr));
+  display: flex;
+
   gap: 16px;
   margin-top: 60px;
   padding-bottom: 120px;
