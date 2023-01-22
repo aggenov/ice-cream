@@ -19,22 +19,6 @@
     transform: scale(1.1);
 }
 
-.backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 30px 20px;
-
-    width: 100%;
-    height: 100%;
-
-    background-color: rgba(46, 47, 66, 0.4);;
-
-    transition: opacity var(--duration-time) var(--timing-function);
-
-    overflow-y: scroll;
-}
-
 .is-hidden-location {
     opacity: 0;
     pointer-events: none;
