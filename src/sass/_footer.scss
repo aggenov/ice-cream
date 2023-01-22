@@ -187,7 +187,103 @@ max-height: 76px;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 44px;
+  min-height: 50px;
  }
   
+}
+// -------------------------------------------------------
+@media screen and (min-width: 1200px) {
+  .footer_text_cream {
+    max-width: 504px;
+    // margin-bottom: 16px;
+    margin-top: 60px;
+  }
+
+    .footer_text {
+      text-transform: uppercase;
+      font-size: 30px;
+     line-height: 1.23;
+     letter-spacing: 0.04em;
+      font-weight: 400;
+      color: rgba(252, 252, 252, 1);
+      padding-bottom: 14px;
+    }
+
+    .footer_text_passion {                          
+ font-weight: 700;
+font-size: 58px;
+line-height: 1.22px;
+letter-spacing: 0.06em;
+color: #FCFCFC;
+padding-top: 16px;
+position: absolute;
+font-family: 'Montserrat';
+font-style: normal;
+text-transform: uppercase;
+max-height: 76px;
+   
+    }
+
+    .footer-icon-link {
+        display: flex;
+        justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #F8D24E;
+    width: 34px;
+    height: 34px;
+    }
+    
+    .footer-social {
+            display: flex;
+            gap: 20px;
+            padding-top: 4px;
+            padding-bottom: 34px;  
+            justify-content: flex-end;    
+    }
+
+.footer_text_link {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 700;
+  font-size: 14px;
+  color: #131313;
+  flex-wrap: wrap;
+}
+
+.footer_contacts-link {
+  color: #FCFCFC;
+  margin-left: 3px;
+  margin-bottom: 40px;
+}
+
+ .footer_address {
+  font-weight: 700;
+  line-height: 1.86;
+  text-align: center;
+  color: #7A7A7A;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+
+  padding-top: 0px;
+  padding-right: 50px;
+  padding-bottom: 0px;
+  padding-left: 60px;
+}
+
+ .footer_coopyright {
+  border-top: 1 px solid #E1E1E1;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: rgba(225, 225, 225, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 44px;
+ }
+}
+
+.footer-icon-link:hover,
+.footer-icon-link:focus {
+  background-color: #FCFCFC;
 }
