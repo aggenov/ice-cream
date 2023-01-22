@@ -30,6 +30,9 @@ body {
 a {
     text-decoration: none;
 }
+a:hover {
+    color: var(--text-main-color);
+}
 
 
 ul {

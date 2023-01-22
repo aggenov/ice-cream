@@ -1,14 +1,16 @@
 .hero {
     background-color: var(--background-main-color);
 }
-
+.hero-page {
+    position: relative;
+}
 
 
 @media screen and (max-width: 767px) {
 
-.hero {
-    position: relative;
-}
+// .hero {
+//     position: relative;
+// }
 
     .hero-page {
     height: 450px;
