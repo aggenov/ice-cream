@@ -8,7 +8,16 @@
   gap: 16px;
   justify-content: center;
 }
+@media screen and (min-width: 320px) {
+  .contacts-wrapper-cards {
+    display: flex;
+    // flex-wrap: wrap;
+    width: 100%;
+  }
 
+  .contacts-wrapper {
+    max-width: 280px;
+  }
 @media screen and (min-width: 768px) {
   .contacts-wrapper-cards {
     display: flex;
@@ -25,15 +34,7 @@
   }
 }
 
-@media screen and (min-width: 320px) {
-  .contacts-wrapper-cards {
-    display: flex;
-    // flex-wrap: wrap;
-    width: 100%;
-  }
-  .contacts-wrapper {
-    max-width: 280px;
-  }
+
 
   .contacts-main-buttons {
     // display: grid;
