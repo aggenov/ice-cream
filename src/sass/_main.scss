@@ -74,4 +74,5 @@ button:disabled {
     transition: opacity var(--duration-time) var(--timing-function);
 
     overflow-y: scroll;
+    z-index: 999;
 }
