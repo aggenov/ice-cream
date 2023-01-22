@@ -1,9 +1,10 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-a:hover {
-    color: var(--text-main-color);
 }
-
-.button-tablet,
+// .button-tablet,
 .button-buy {
     width: 152px;
     height: 42px;
@@ -15,22 +16,24 @@ a:hover {
     font-weight: 600;
     font-size: 14px;
     text-align: center;
+    line-height: 1.21;
 }
 
-.button-tablet:hover,
+// .button-tablet:hover,
 .button-buy:hover {
     background-color: var(--btn-hover-color);
 }
 
 /* header */
-header {
+.header {
     background-color: var(--background-main-color);
+    padding-top: 12px;
 }
 
-.menu-li {
-    align-items: center;
-    text-align: center;
-}
+// .menu-li {
+//     align-items: center;
+//     text-align: center;
+// }
 
 /* -------Бургер меню контакты------- */
 .js-open-menu {
@@ -38,8 +41,9 @@ header {
     background-color: transparent;
     width: 32px;
     height: 32px;
-    margin-top: 14px;
-    margin-left: 360px;
+    // margin-top: 14px;
+    // margin-left: 360px;
+    margin-left: 440px;
 }
 
 .js-open-menu:hover,
@@ -89,8 +93,6 @@ header {
     border: none;
 }
 
-/* menu-desktop */
-.button-tablet,
 .menu-desktop {
     display: none;
 }
@@ -98,17 +100,19 @@ header {
 
 /* ----------------- Mobile 480px -----------------*/
 @media screen and (max-width: 767px) {
-    body {
-        max-width: 480px;
-        margin: auto;
-    }
+    // body {
+    //     max-width: 480px;
+    //     margin: auto;
+    // }
 
     .header {
-        min-width: 480px;
+        min-width: 320px;
+        padding-top: 14px;
     }
 
     .logo {
-        // margin-left: 20px;
+        width: 48px;
+        height: 44px;
     }
 
     .logo-nav {
@@ -124,62 +128,61 @@ header {
         line-height: 39px;
     }
 
-    a {
-        font-family: 'Montserrat';
-        font-weight: 700;
-        font-size: 32px;
-        text-decoration: none;
-        color: var(--text-light-color);
-    }
+    // a {
+    //     font-family: 'Montserrat';
+    //     font-weight: 700;
+    //     font-size: 32px;
+    //     text-decoration: none;
+    //     color: var(--text-light-color);
+    // }
 
-    .button-buy {
-        display: block;
-        margin-top: 114px;
-        margin-right: auto;
-        margin-left: auto;
-    }
+        .button-buy {
+            display: none;
+        }
 }
 
 
 
 /* ----------------- Tablet 768px -----------------*/
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-    body {
-        max-width: 768px;
-        margin: auto;
-    }
+    // body {
+    //     max-width: 768px;
+    //     margin: auto;
+    // }
 
     .header {
         position: relative;
         min-width: 768px;
+        padding-top: 20px;
     }
 
     .logo {
-        // margin-left: 32px;
+        width: 48px;
+        height: 44px;
     }
 
-    img {
-        display: inline-flex;
-    }
+    // img {
+    //     display: inline-flex;
+    // }
 
-    a {
-        font-family: 'Montserrat';
-        font-weight: 700;
-        font-size: 48px;
-        text-decoration: none;
-        color: var(--text-light-color);
-    }
+    // a {
+    //     font-family: 'Montserrat';
+    //     font-weight: 700;
+    //     font-size: 48px;
+    //     text-decoration: none;
+    //     color: var(--text-light-color);
+    // }
 
     .js-open-menu {
         margin-left: 440px;
     }
 
-    .button-tablet {
-        display: inline;
-        position: absolute;
-        margin-left: 32px;
-        margin-top: 24px;
-    }
+    // .button-tablet {
+    //     display: inline;
+    //     position: absolute;
+    //     margin-left: 32px;
+    //     margin-top: 24px;
+    // }
 
     .js-menu-container {
         width: 768px;
@@ -195,32 +198,36 @@ header {
         height: 44px;
     }
 
-    .menu-li {
-        margin-top: 140px;
-    }
+    // .menu-li {
+    //     margin-top: 140px;
+    // }
 
-    .menu-li-item {
-        margin-top: 40px;
-    }
-
-    .button-buy {
-        display: none;
-    }
+    // .menu-li-item {
+    //     margin-top: 40px;
+    // }
+        .button-buy {
+            display: block;
+            // margin-right: auto;
+            margin-left: auto;
+            // display: none;
+        }
 
 }
 
 
 /* ----------------- Desktop 1200px -----------------*/
 @media screen and (min-width: 1200px) {
-    body {
-        max-width: 1200px;
-        margin: auto;
+    // body {
+    //     max-width: 1200px;
+    //     margin: auto;
+    // }
+
+    .js-open-menu {
+        display: none;
     }
 
-    .button-tablet,
-    .js-open-menu,
-    .js-menu-container {
-        display: none;
+    .header {
+        padding-top: 8px;
     }
 
     .logo-nav {
@@ -234,37 +241,38 @@ header {
 
     .menu-desktop {
         display: flex;
-        margin-left: 308px;
+        margin-left: 309px;
+    }
+    .menu-list {
+        display: flex;
+        width: 444px;
+        gap: 28px;
+        align-items: flex-end;
+        text-align: center;
     }
 
+        .js-menu-container {
+            display: none;
+        }
     .menu {
         margin-top: 32px;
     }
 
-    .menu-item {
-        display: inline-flex;
-        margin-right: 28px;
-        font-family: 'Montserrat';
+    .menu-item-link {
         font-weight: 700;
-    }
-
-    .menu-item:last-child {
-        margin-right: 0;
-    }
-
-    a {
-        text-decoration: none;
         color: var(--text-light-color);
     }
 
-    a:hover,
-    a:focus {
+
+    .menu-item-link:hover,
+    .menu-item-link:focus {
         color: var(--btn-default-color);
     }
 
     .button-buy {
         margin-top: 20px;
         margin-left: 198px;
+        // display: none;
     }
 
 }

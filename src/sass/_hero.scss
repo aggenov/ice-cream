@@ -1,14 +1,13 @@
 .hero {
     background-color: var(--background-main-color);
 }
-
+.hero-page {
+    position: relative;
+}
 
 
 @media screen and (max-width: 767px) {
 
-.hero {
-    position: relative;
-}
 
     .hero-page {
     height: 450px;
@@ -51,6 +50,9 @@
         font-weight: 600;
         font-size: 12px;
         line-height: 1.25;
+        padding: 11px 26px;
+        color: var(--text-main-color);
+        transition: border-color var(--duration-time) var(--timing-function);
     }
 
     .hero-link {
@@ -99,6 +101,7 @@
     .hero-button {
         margin-bottom: 30px;
     }
+
 
     .hero-bg-ice {
     left: 242px;
@@ -165,6 +168,7 @@
         align-items: center;
         margin-top: 24px;
         margin-top: 12px;
+        
     }
         
     .hero-btn {
@@ -176,7 +180,20 @@
         font-weight: 600;
         font-size: 12px;
         line-height: 1.25;
+        padding: 11px 26px;
+        transition: border-color var(--duration-time) var(--timing-function);
+        color: var(--text-main-color);
     }
+
+        .hero-btn:hover {
+            border-color: var(--btn-hover-color);
+            cursor: pointer;
+        }
+    
+        .hero-btn:focus {
+            border-color: var(--btn-hover-color);
+            color: var(--text-light-color);
+        }
 
     .hero-link {
         font-weight: 600;
@@ -249,21 +266,24 @@
     width: 134px;
     height: 42px;
     border-radius: 10px;
+    position: relative;
+    z-index: 2;
+    margin: 12px 34px;
+    transition: border-color var(--duration-time) var(--timing-function);
 }
 
 .hero-btn:hover {
-    border: var(--btn-hover-color);
-
+    border-color: var(--btn-hover-color);
     cursor: pointer;
 }
 
 .hero-btn:focus {
-    border: 2px solid var(--btn-hover-color);
+    border-color: var(--btn-hover-color);
     color: var(--text-light-color);
 }
 
-.hero-btn:disabled {
-    border: var(--text-light-color)
+.hero-dtn:disabled {
+    border-color: var(--text-disable-color)
 }
 
 .hero-button {
@@ -276,6 +296,8 @@
     font-size: 14px;
     line-height: 1.21;
     width: 200px;
+    position: relative;
+    z-index: 2;
 }
 
 .hero-link:hover {
@@ -296,6 +318,7 @@
 
 .hero-text-info {
     gap: 32px;
+    padding-top: 32px;
 }
 
 .hero-cafes {

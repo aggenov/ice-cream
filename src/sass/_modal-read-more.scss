@@ -1,17 +1,3 @@
-.backdrop{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.2);
-    opacity: 1;
-    visibility: visible;
-    pointer-events: initial;
-
-    transition: opacity 200ms linear, visibility 200ms linear;
-}
-
 .backdrop.is-hidden-read{
 opacity: 1;
 visibility: hidden;
