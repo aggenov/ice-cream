@@ -6,66 +6,52 @@
 
 .contacts-wrapper-cards {
   display: flex;
-  top: -128px;
-  // width: calc(100% - 32px);
-  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
+  row-gap: 16px;
 }
-@media screen and (min-width: 320px) {
-  .contacts-wrapper-cards {
-    display: flex;
-    // flex-wrap: wrap;
-    width: 100%;
-  }
 
+.contacts-wrapper {
+  flex-basis: 100%;
+  border-radius: 24px;
+  border: none;
+  padding: 40px;
+  background-color: #ffffff;
+  
+}
+
+@media screen and (min-width: 480px) {
   .contacts-wrapper {
-    max-width: 280px;
+    flex-basis: 280px;
   }
+}
+
 @media screen and (min-width: 768px) {
   .contacts-wrapper-cards {
-    // display: flex;
-    // flex-wrap: nowrap;
-    // justify-content: center;
-    // align-items: center;
-    // width: calc(100% - 32px);
-    // gap: 16px;
-    // justify-content: center;
-    // margin-left: 0;
-
-    flex-wrap: nowrap;
-    justify-content: center;
-    gap: 16px;
+    column-gap: 16px;
   }
   .contacts-wrapper {
-    width: 224px;
-    // width: calc(100% - 32px);
+    flex-basis: calc((100% - 32px) / 3);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-wrapper-cards {
+    column-gap: 32px;
+  }
+  .contacts-wrapper {
+    flex-basis: calc((100% - 64px) / 3);
   }
 }
 
 @media screen and (min-width: 320px) {
-  .contacts-wrapper-cards {
-    display: flex;
-    // flex-wrap: wrap;
-    width: 100%;
-  }
-  .contacts-wrapper {
-    max-width: 280px;
-  }
-
   .contacts-main-buttons {
     flex-wrap: wrap;
     margin-top: 60px;
     padding-bottom: 120px;
     align-items: center;
   }
-}
-
-.contacts-wrapper {
-  width: 368px;
-  border-radius: 24px;
-  border: none;
-  padding: 40px;
-  background-color: #ffffff;
 }
 
 .card-name {
@@ -223,5 +209,4 @@
   background-color: #aec6a5;
   border: 2px solid #ababab;
   color: #000000;
-}
 }
