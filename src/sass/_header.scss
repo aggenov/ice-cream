@@ -1,7 +1,7 @@
 
-a:hover {
-    color: var(--text-main-color);
-}
+// a:hover {
+//     color: var(--text-main-color);
+// }
 
 .button-tablet,
 .button-buy {
@@ -98,10 +98,10 @@ header {
 
 /* ----------------- Mobile 480px -----------------*/
 @media screen and (max-width: 767px) {
-    body {
-        max-width: 480px;
-        margin: auto;
-    }
+    // body {
+    //     max-width: 480px;
+    //     margin: auto;
+    // }
 
     .header {
         min-width: 480px;
@@ -124,13 +124,13 @@ header {
         line-height: 39px;
     }
 
-    a {
-        font-family: 'Montserrat';
-        font-weight: 700;
-        font-size: 32px;
-        text-decoration: none;
-        color: var(--text-light-color);
-    }
+    // a {
+    //     font-family: 'Montserrat';
+    //     font-weight: 700;
+    //     font-size: 32px;
+    //     text-decoration: none;
+    //     color: var(--text-light-color);
+    // }
 
     .button-buy {
         display: block;
@@ -144,10 +144,10 @@ header {
 
 /* ----------------- Tablet 768px -----------------*/
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-    body {
-        max-width: 768px;
-        margin: auto;
-    }
+    // body {
+    //     max-width: 768px;
+    //     margin: auto;
+    // }
 
     .header {
         position: relative;
@@ -158,17 +158,17 @@ header {
         // margin-left: 32px;
     }
 
-    img {
-        display: inline-flex;
-    }
+    // img {
+    //     display: inline-flex;
+    // }
 
-    a {
-        font-family: 'Montserrat';
-        font-weight: 700;
-        font-size: 48px;
-        text-decoration: none;
-        color: var(--text-light-color);
-    }
+    // a {
+    //     font-family: 'Montserrat';
+    //     font-weight: 700;
+    //     font-size: 48px;
+    //     text-decoration: none;
+    //     color: var(--text-light-color);
+    // }
 
     .js-open-menu {
         margin-left: 440px;
@@ -212,10 +212,10 @@ header {
 
 /* ----------------- Desktop 1200px -----------------*/
 @media screen and (min-width: 1200px) {
-    body {
-        max-width: 1200px;
-        margin: auto;
-    }
+    // body {
+    //     max-width: 1200px;
+    //     margin: auto;
+    // }
 
     .button-tablet,
     .js-open-menu,
