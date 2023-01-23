@@ -30,10 +30,6 @@
     padding-top: 12px;
 }
 
-// .menu-li {
-//     align-items: center;
-//     text-align: center;
-// }
 
 /* -------Бургер меню контакты------- */
 .js-open-menu {
@@ -41,9 +37,7 @@
     background-color: transparent;
     width: 32px;
     height: 32px;
-    // margin-top: 14px;
-    // margin-left: 360px;
-    margin-left: 440px;
+    margin-left: auto;
 }
 
 .js-open-menu:hover,
@@ -56,7 +50,6 @@
 .js-menu-container {
     position: fixed;
     opacity: 0;
-    // pointer-events: none;
     content: "";
     top: 0;
     min-width: 480px;
@@ -100,57 +93,59 @@
 
 /* ----------------- Mobile 480px -----------------*/
 @media screen and (max-width: 767px) {
-    // body {
-    //     max-width: 480px;
-    //     margin: auto;
-    // }
 
     .header {
         min-width: 320px;
         padding-top: 14px;
     }
 
-
     .logo {
         width: 48px;
         height: 44px;
     }
 
+    .logo-menu {
+        margin-top: 14px;
+    }
 
     .logo-nav {
         display: flex;
     }
-
+    
     .menu-li {
         margin-top: 40px;
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 32px;
+        text-decoration: none;
+        text-align: center;
     }
-
+    
+    a {
+        color: var(--text-light-color);
+    }
+    
     .menu-li-item {
         margin-top: 32px;
         line-height: 39px;
     }
+    
+    .button-buy {
+        display: none;
+    }
 
-    // a {
-    //     font-family: 'Montserrat';
-    //     font-weight: 700;
-    //     font-size: 32px;
-    //     text-decoration: none;
-    //     color: var(--text-light-color);
-    // }
-
-        .button-buy {
-            display: none;
-        }
+    .buy-now {
+        display: inline;
+        margin-top: 114px;
+        margin-right: 164px;
+        margin-left: 164px;
+    }
 }
 
 
 
 /* ----------------- Tablet 768px -----------------*/
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-    // body {
-    //     max-width: 768px;
-    //     margin: auto;
-    // }
 
     .header {
         position: relative;
@@ -158,35 +153,18 @@
         padding-top: 20px;
     }
 
-
     .logo {
         width: 48px;
         height: 44px;
     }
 
-
-    // img {
-    //     display: inline-flex;
-    // }
-
-    // a {
-    //     font-family: 'Montserrat';
-    //     font-weight: 700;
-    //     font-size: 48px;
-    //     text-decoration: none;
-    //     color: var(--text-light-color);
-    // }
+    .logo-menu {
+        margin-top: 20px;
+    }
 
     .js-open-menu {
         margin-left: 440px;
     }
-
-    // .button-tablet {
-    //     display: inline;
-    //     position: absolute;
-    //     margin-left: 32px;
-    //     margin-top: 24px;
-    // }
 
     .js-menu-container {
         width: 768px;
@@ -197,34 +175,36 @@
         right: 32px;
     }
 
-    .logo {
-        width: 48px;
-        height: 44px;
+    .menu-li {
+        margin-top: 140px;
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 48px;
+        text-decoration: none;
+        text-align: center;
     }
 
-    // .menu-li {
-    //     margin-top: 140px;
-    // }
+    .menu-li-item {
+        margin-top: 40px;
+    }
 
-    // .menu-li-item {
-    //     margin-top: 40px;
-    // }
-        .button-buy {
-            display: block;
-            // margin-right: auto;
-            margin-left: auto;
-            // display: none;
-        }
+    a {
+        color: var(--text-light-color);
+    }
 
+    .button-buy {
+        display: block;
+        margin-left: auto;
+    }
+
+    .buy-now {
+        display: none;
+    }
 }
 
 
 /* ----------------- Desktop 1200px -----------------*/
 @media screen and (min-width: 1200px) {
-    // body {
-    //     max-width: 1200px;
-    //     margin: auto;
-    // }
 
     .js-open-menu {
         display: none;
@@ -255,9 +235,10 @@
         text-align: center;
     }
 
-        .js-menu-container {
-            display: none;
+    .js-menu-container {
+        display: none;
         }
+
     .menu {
         margin-top: 32px;
     }
@@ -276,7 +257,7 @@
     .button-buy {
         margin-top: 20px;
         margin-left: 198px;
-        // display: none;
+    
     }
 
 }
