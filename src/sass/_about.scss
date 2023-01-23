@@ -130,6 +130,7 @@
 
 
 
+
 @media screen and (max-width:768px) {
     .about-title{
         max-width: 200px;  
@@ -141,15 +142,23 @@
 
 
 // ===============Mobile======================================
-
+@media screen and (max-width:480px) {
+    .about {
+        padding-bottom: 60px;
+    }
+}
 //================Tablet======================================
 @media screen and (min-width:768px) {
+    .about {
+            padding-bottom: 86px;
+        }
     .about-traditional{
         font-weight: 800;
         font-size: 22px;
         line-height: 1.23;
         letter-spacing: 0.04em;
     }
+
 
     .about-title{
         font-size: 34px;
@@ -204,6 +213,9 @@
 
 //================Dasctop======================================
 @media screen and (min-width:1200px) {
+    .about {
+            padding-bottom: 99px;
+        }
     .about-traditional{
         font-weight: 800;
         font-size: 30px;
