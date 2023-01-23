@@ -15,9 +15,9 @@
 }
 .franchise-modal {
     position: absolute;
-    transform: translateX(-50%) scale(1);
-    top: 30px;
+    top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
     width: 100%;
     width: 280px;
     background-color: var(--text-light-color);

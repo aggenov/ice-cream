@@ -30,6 +30,11 @@
 
 .modal-ingredients {
     display: block;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%) scale(1);
+    width: 280px;
     padding: 28px 20px;
 
     background-color: var(--text-light-color);
@@ -40,20 +45,10 @@
     transition: transform var(--duration-time) var(--timing-function);
 }
 
-@media screen and (min-width: 480px) {
-    .modal-ingredients {
-        position: absolute;
-        top: 30px;
-        left: 50%;
-        transform: translateX(-50%) scale(1);
-        width: 440px;
-        padding: 32px 40px;
-    }
-}
-
 @media screen and (min-width: 768px) {
     .modal-ingredients {
         width: 568px;
+        padding: 32px 40px;
     }
 }
 
