@@ -281,7 +281,14 @@ max-height: 76px;
   align-items: center;
   min-height: 49px;
  }
+}
 
+.footer-list-icon {
+  fill: currentColor;
+}
+
+.footer-icon-link {
+  color: var(--background-main-color);
 }
 
 .footer-icon-link:hover,
