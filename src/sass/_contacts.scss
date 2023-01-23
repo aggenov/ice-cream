@@ -1,71 +1,72 @@
 .contacts {
-  position: relative;
-
   background-color: var(--background-main-color);
+}
+
+.upper {
+  margin-top: -128px;
 }
 
 .contacts-wrapper-cards {
   display: flex;
-  top: -128px;
-  // width: calc(100% - 32px);
-  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
+  row-gap: 16px;
+  z-index: 1;
 }
-@media screen and (min-width: 320px) {
-  .contacts-wrapper-cards {
-    display: flex;
-    // flex-wrap: wrap;
-    width: 100%;
-  }
 
+.contacts-wrapper {
+  flex-basis: 100%;
+  border-radius: 24px;
+  border: none;
+  padding: 40px;
+  background-color: #ffffff;
+}
+
+@media screen and (min-width: 480px) {
   .contacts-wrapper {
-    max-width: 280px;
+    flex-basis: 280px;
   }
+}
+
 @media screen and (min-width: 768px) {
   .contacts-wrapper-cards {
-    // display: flex;
-    // flex-wrap: nowrap;
-    // justify-content: center;
-    // align-items: center;
-    // width: calc(100% - 32px);
-    // gap: 16px;
-    // justify-content: center;
-    // margin-left: 0;
-
-    flex-wrap: nowrap;
-    justify-content: center;
-    gap: 16px;
-  }
-  .contacts-wrapper {
-    width: 224px;
+    column-gap: 16px;
+    margin-left: 0;
+    margin-right: 0;
     // width: calc(100% - 32px);
   }
-}
-
-@media screen and (min-width: 320px) {
-  .contacts-wrapper-cards {
-    display: flex;
-    // flex-wrap: wrap;
-    width: 100%;
-  }
   .contacts-wrapper {
-    max-width: 280px;
+    flex-basis: calc((100% - 32px) / 3);
   }
 
   .contacts-main-buttons {
-    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 16px;
     margin-top: 60px;
     padding-bottom: 120px;
     align-items: center;
   }
 }
 
-.contacts-wrapper {
-  width: 368px;
-  border-radius: 24px;
-  border: none;
-  padding: 40px;
-  background-color: #ffffff;
+@media screen and (min-width: 1200px) {
+  .contacts-wrapper-cards {
+    column-gap: 32px;
+  }
+  .contacts-wrapper {
+    flex-basis: calc((100% - 64px) / 3);
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .contacts-main-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .card-name {
@@ -103,7 +104,6 @@
 
 .contacts-address:hover {
   text-decoration: underline;
-  cursor: default;
 }
 
 .contacts-item {
@@ -153,13 +153,14 @@
   // display: grid;
   // grid-template-columns: repeat(auto-fit, minmax(196px, 1fr));
   display: flex;
-
   gap: 16px;
   margin-top: 60px;
   padding-bottom: 120px;
   justify-content: center;
   align-items: center;
 }
+
+// location-button
 
 .contacts-button-location {
   min-width: 196px;
@@ -169,8 +170,6 @@
   border-radius: 10px;
   justify-content: center;
   align-items: center;
-  margin-left: auto;
-  //   margin-right: auto;
   font-size: 14px;
   font-weight: 600;
   line-height: 1.28;
@@ -192,6 +191,8 @@
   color: #131313;
 }
 
+// franchise-button
+
 .contacts-button-franchise {
   min-width: 196px;
   height: 42px;
@@ -200,8 +201,6 @@
   border-radius: 10px;
   justify-content: center;
   align-items: center;
-  //   margin-left: auto;
-  margin-right: auto;
   font-size: 14px;
   font-weight: 600;
   line-height: 1.28;
@@ -223,5 +222,4 @@
   background-color: #aec6a5;
   border: 2px solid #ababab;
   color: #000000;
-}
 }
