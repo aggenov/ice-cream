@@ -8,7 +8,7 @@
 
 .box-for-slider {
   position: absolute;
-  top: -32px;
+  top: 32px;
   left: 50%;
   transform: translate(-50%, 0);
   z-index: 2;
@@ -17,7 +17,6 @@
   margin-left: auto;
   margin-right: auto;
 }
-
 
 
 // styles for script
@@ -40,13 +39,12 @@
   object-fit: cover;
 }
 
-
 // styles for TABLET
 
 @media screen and (min-width: 768px) {
   .gallery {
-      height: 204px;
-    }
+    height: 204px;
+  }
   .box-for-slider {
     top: 60px;
     z-index: 200;
@@ -60,8 +58,8 @@
 
 @media screen and (min-width: 1200px) {
   .gallery {
-      height: 178px;
-    }
+    height: 178px;
+  }
   .box-for-slider {
     top: 80px;
     z-index: 200;
