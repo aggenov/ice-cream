@@ -38,12 +38,18 @@ address {
 }
 
 .contacts-wrapper {
-  flex-basis: 280px;
+  flex-basis: 100%;
   border-radius: 24px;
   border: none;
   padding: 40px 32px 24px 32px;
   background-color: #ffffff;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+}
+
+@media screen and (min-width: 480px) {
+  .contacts-wrapper {
+    flex-basis: 280px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -181,7 +187,8 @@ address {
 }
 
 .contacts-address:hover {
-  color: var(--btn-hover-color);
+  color: var(--background-card-color-milkshakes);
+  text-decoration: underline;
 }
 
 .contacts-working {
@@ -243,14 +250,14 @@ address {
   }
 }
 
-.contacts-address {
+.contacts-address-links {
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
 
 @media screen and (min-width: 768px) {
-  .contacts-address {
+  .contacts-address-links {
     gap: 4px;
   }
 }
