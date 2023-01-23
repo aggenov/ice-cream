@@ -1,7 +1,9 @@
 .contacts {
-  position: relative;
-
   background-color: var(--background-main-color);
+}
+
+.upper {
+  margin-top: -128px;
 }
 
 .contacts-wrapper-cards {
@@ -10,6 +12,7 @@
   justify-content: center;
   align-items: center;
   row-gap: 16px;
+  z-index: 1;
 }
 
 .contacts-wrapper {
@@ -18,7 +21,6 @@
   border: none;
   padding: 40px;
   background-color: #ffffff;
-  
 }
 
 @media screen and (min-width: 480px) {
@@ -30,9 +32,22 @@
 @media screen and (min-width: 768px) {
   .contacts-wrapper-cards {
     column-gap: 16px;
+
+    margin-left: 0;
+    margin-right: 0;
+    // width: calc(100% - 32px);
   }
   .contacts-wrapper {
     flex-basis: calc((100% - 32px) / 3);
+  }
+
+  .contacts-main-buttons {
+    flex-direction: row;
+    gap: 16px;
+    margin-top: 60px;
+    padding-bottom: 120px;
+    align-items: center;
+
   }
 }
 
@@ -48,9 +63,11 @@
 @media screen and (min-width: 320px) {
   .contacts-main-buttons {
     flex-wrap: wrap;
-    margin-top: 60px;
-    padding-bottom: 120px;
+    justify-content: center;
     align-items: center;
+    margin-top: 60px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -89,7 +106,6 @@
 
 .contacts-address:hover {
   text-decoration: underline;
-  cursor: default;
 }
 
 .contacts-item {
@@ -139,13 +155,14 @@
   // display: grid;
   // grid-template-columns: repeat(auto-fit, minmax(196px, 1fr));
   display: flex;
-
   gap: 16px;
   margin-top: 60px;
   padding-bottom: 120px;
   justify-content: center;
   align-items: center;
 }
+
+// location-button
 
 .contacts-button-location {
   min-width: 196px;
@@ -155,8 +172,6 @@
   border-radius: 10px;
   justify-content: center;
   align-items: center;
-  margin-left: auto;
-  //   margin-right: auto;
   font-size: 14px;
   font-weight: 600;
   line-height: 1.28;
@@ -178,6 +193,8 @@
   color: #131313;
 }
 
+// franchise-button
+
 .contacts-button-franchise {
   min-width: 196px;
   height: 42px;
@@ -186,8 +203,6 @@
   border-radius: 10px;
   justify-content: center;
   align-items: center;
-  //   margin-left: auto;
-  margin-right: auto;
   font-size: 14px;
   font-weight: 600;
   line-height: 1.28;
