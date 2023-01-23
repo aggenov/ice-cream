@@ -285,15 +285,32 @@ address {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-top: 60px;
-  padding-bottom: 120px;
+  margin-top: 20px;
+  padding-bottom: 60px;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (min-width: 480px) {
+  .contacts-main-buttons {
+    flex-direction: row;
+    margin-top: 24px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .contacts-main-buttons {
     flex-direction: row;
+    margin-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-main-buttons {
+    flex-direction: row;
+    margin-top: 60px;
+    padding-bottom: 120px;
   }
 }
 
