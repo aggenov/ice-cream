@@ -1,6 +1,7 @@
 .hero {
     background-color: var(--background-main-color);
 }
+
 .hero-page {
     position: relative;
 }
@@ -10,9 +11,11 @@
 
 
     .hero-page {
-    height: 450px;
+    min-height: 450px;
     // position: relative;
     }
+
+
 
     .hero-title {
         width: 247px;
@@ -94,7 +97,7 @@
     }
 
     .hero-page {
-        height: 458px;
+        min-height: 458px;
         // position: relative;
     }
 
@@ -121,7 +124,7 @@
     }
     .hero-page {
         padding-top: 14px;
-        height: 365px;
+        min-height: 365px;
 
     }
 
@@ -187,6 +190,7 @@
 
         .hero-btn:hover {
             border-color: var(--btn-hover-color);
+            cursor: pointer;
         }
     
         .hero-btn:focus {
@@ -248,7 +252,7 @@
 
     .hero-page {
         padding-top: 58px;
-        height: 614px;
+        min-height: 614px;
 }
 
 .hero-title {
@@ -273,6 +277,7 @@
 
 .hero-btn:hover {
     border-color: var(--btn-hover-color);
+    cursor: pointer;
 }
 
 .hero-btn:focus {
@@ -334,7 +339,6 @@
 
 .hero-bg-dots {
     bottom: 0;
-    left: 0;
 }
 
 .hero-bg-ice {
