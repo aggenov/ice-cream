@@ -6,4 +6,5 @@ import './js/modal-location';
 import './js/modal-product-card';
 import './js/modal-read-more';
 import './js/snow';
-import './js/animation';
+
+
