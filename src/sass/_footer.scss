@@ -18,7 +18,7 @@
       text-transform: uppercase;
       font-size: 18px;
      line-height: 1.22;
-        color: rgba(252, 252, 252, 1);
+        color: var(--text-light-color);
       font-weight: 700;
     }
 
@@ -27,7 +27,7 @@
 font-size: 34px;
 line-height: 41px;
 letter-spacing: 0.04em;
-color: #FCFCFC;
+color: var(--text-light-color);
 margin-top: 16px;
 position: absolute;
 font-family: 'Montserrat';
@@ -63,11 +63,11 @@ max-height: 76px;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.86;
-  color: #131313;
+  color: var(--text-main-color);
 }
 
 .footer_contacts-link {
-  color: #FCFCFC;
+  color: var(--text-light-color);
   margin-left: 3px;
   margin-bottom: 40px;
 }
@@ -77,7 +77,7 @@ max-height: 76px;
   font-weight: 700;
   line-height: 1.5;
   text-align: center;
-  color: #7A7A7A;
+  color: var(--text-disable-color);
   font-size: 14px;
 
   padding-top: 0px;
@@ -155,12 +155,12 @@ max-height: 76px;
   justify-content: flex-end;
   font-weight: 700;
   font-size: 14px;
-  color: #131313;
+  color: var(--text-main-colo);
   flex-wrap: wrap;
 }
 
 .footer_contacts-link {
-  color: #FCFCFC;
+  color: var(--text-light-color);
   margin-left: 3px;
   margin-bottom: 40px;
 }
@@ -211,7 +211,7 @@ max-height: 76px;
      line-height: 1.23;
      letter-spacing: 0.04em;
       font-weight: 400;
-      color: rgba(252, 252, 252, 1);
+      color: var(--text-light-color);
       padding-bottom: 14px;
     }
 
@@ -220,7 +220,7 @@ max-height: 76px;
 font-size: 58px;
 line-height: 1.22px;
 letter-spacing: 0.06em;
-color: #FCFCFC;
+color: var(--text-light-color);
 padding-top: 16px;
 position: absolute;
 font-style: normal;
@@ -252,12 +252,12 @@ max-height: 76px;
   justify-content: flex-end;
   font-weight: 700;
   font-size: 16px;
-  color: #131313;
+  color: var(--text-main-color);
   flex-wrap: wrap;
 }
 
 .footer_contacts-link {
-  color: #FCFCFC;
+  color: var(--text-light-color);
   margin-left: 3px;
   margin-bottom: 40px;
 }
@@ -266,7 +266,7 @@ max-height: 76px;
   font-weight: 700;
   line-height: 1.86;
   text-align: center;
-  color: #7A7A7A;
+  color: var(--text-disable-color);
   font-size: 12px;
   letter-spacing: 0.02em;
 }
@@ -289,9 +289,13 @@ max-height: 76px;
 
 .footer-icon-link {
   color: var(--background-main-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-icon-link:hover,
 .footer-icon-link:focus {
   color: var(--text-light-color);
 }
+
+
