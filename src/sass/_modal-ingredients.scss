@@ -22,10 +22,11 @@
 .is-hidden-ingr {
     opacity: 0;
     pointer-events: none;
+    visibility: hidden;
 }
 
 .is-hidden-ingr .modal-ingredients {
-    transform: scale(0.9);
+    transform: translateX(-50%) scale(0.9);
 }
 
 .modal-ingredients {

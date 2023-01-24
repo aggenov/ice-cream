@@ -20,6 +20,10 @@
     transform: scale(1.1);
 }
 
+.is-hidden-prod .product-card-modal-container {
+    transform: translateX(-50%) scale(0.9);
+}
+
 .product-card-modal-container {
     position: absolute;
     transform: translateX(-50%) scale(1);
@@ -30,6 +34,7 @@
     border: 2px solid var(--btn-default-color);
     border-radius: 10px;
     margin: 0 auto;
+    transition: transform var(--duration-time) var(--timing-function);
 }
 
 @media screen and (min-width: 320px) {
@@ -286,4 +291,5 @@ position: absolute;
 .is-hidden-prod {
     opacity: 0;
     pointer-events: none;
+    visibility: hidden;
 }

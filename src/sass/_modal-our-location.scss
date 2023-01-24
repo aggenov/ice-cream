@@ -22,10 +22,11 @@
 .is-hidden-location {
     opacity: 0;
     pointer-events: none;
+    visibility: hidden;
 }
 
 .is-hidden-location .modal-location {
-    transform: scale(0.9);
+    transform: translate(-50%, -50%) scale(0.9);
 }
 
 .modal-location {

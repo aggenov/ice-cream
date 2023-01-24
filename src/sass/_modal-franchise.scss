@@ -17,7 +17,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1);
     width: 100%;
     width: 280px;
     background-color: var(--text-light-color);
@@ -27,6 +27,7 @@
     z-index: 900;
 
     padding: 28px;
+    transition: transform var(--duration-time) var(--timing-function);
 }
 
 @media screen and (min-width:768px) {
@@ -38,6 +39,11 @@
 .is-hidden-franchise {
     opacity: 0;
     pointer-events: none;
+    visibility: hidden;
+}
+
+.is-hidden-franchise .franchise-modal {
+    transform: translate(-50%, -50%) scale(0.9);
 }
 
 .franchise-modal-h2 {
