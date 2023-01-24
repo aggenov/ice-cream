@@ -1,14 +1,20 @@
 .section-product {
     padding:60px 0 60px 0;
      text-align: center;
-     background-image: url(../images/background-image-ace-cream/backgroud-mobile-1x.png);
+     background-image: url(../images/background-image-ace-cream/product-bg/product-bg@1x.jpg);
      background-repeat: no-repeat;
+     background-position: center;
      background-size: 100%;
      @media (min-device-pixel-ratio: 2),
          (min-resolution: 192dpi),
          (min-resolution: 2dppx) {
-         background-image: url(../images/background-image-ace-cream/backgroud-mobile@2x.png);
+         background-image: url(../images/background-image-ace-cream/product-bg/product-bg@2x.jpg);
          }
+    @media (min-device-pixel-ratio: 3),
+        (min-resolution: 288dpi),
+        (min-resolution: 3dppx) {
+        background-image: url(../images/background-image-ace-cream/product-bg/product-bg@3x.jpg);
+     }
      @media screen and (min-width: 768px) {
          background-image: url(../images/background-image-ace-cream/background-tablet-1x.png);
          background-size: cover;
@@ -138,14 +144,12 @@
          }
  
          @media screen and (min-width: 768px) {
-             // width: calc((100% - 16px) / 3);
              width: 224px;
              height: 428px;
              padding: 108px 26px 12px;
          }
          @media screen and (min-width: 1200px) {
              gap: 29px;
-             // width: calc((100% - 29px) / 3);
              min-width: 370px;
              height: 536px;
              padding: 165px 64px 60px;
