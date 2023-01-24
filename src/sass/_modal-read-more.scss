@@ -4,11 +4,15 @@ visibility: hidden;
 pointer-events: none;
 }
 
+.is-hidden-read .modal-read-more {
+    transform: translate(-50%, -50%) scale(0.9);
+}
+
 .modal-read-more{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1);
     width: 280px;
     padding: 28px;
     justify-content: center;

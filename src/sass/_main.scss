@@ -77,7 +77,7 @@ button:disabled {
 
     background-color: rgba(46, 47, 66, 0.4);;
 
-    transition: opacity var(--duration-time) var(--timing-function);
+    transition: opacity var(--duration-time) var(--timing-function), visibility var(--duration-time) var(--timing-function);
 
     overflow-y: scroll;
     z-index: 999;
