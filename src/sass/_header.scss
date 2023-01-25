@@ -45,6 +45,7 @@
 .js-close-menu:hover,
 .js-close-menu:focus {
     background-color: transparent;
+    color: var(--btn-default-color);
 }
 
 .js-menu-container {
@@ -162,7 +163,7 @@
     }
 
     .js-open-menu {
-        margin-left: 440px;
+        margin-right: 32px;
     }
 
     .js-menu-container {
@@ -193,7 +194,7 @@
 
     .button-buy {
         display: block;
-        margin-left: auto;
+        // margin-left: auto;
     }
 
     .buy-now {

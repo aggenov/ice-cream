@@ -119,7 +119,7 @@
 
 .button-about-read:hover{
     background-color: var(--btn-hover-color);
-    cursor: pointer;
+    cursor: url("../images/cursor-hover.png"), pointer;
 }
 
 .button-about-read:focus{
