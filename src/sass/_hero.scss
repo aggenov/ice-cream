@@ -45,15 +45,14 @@
     }
 
     .hero-btn {
-        width: 108px;
-        height: 38px;
+        min-width: 108px;
+        padding: 10px 26px 12px;
         border: 2px solid var(--btn-default-color);
         border-radius: 8px;
         background-color: transparent;
         font-weight: 600;
         font-size: 12px;
         line-height: 1.25;
-        padding: 11px 26px;
         color: var(--text-main-color);
         transition: border-color var(--duration-time) var(--timing-function);
     }
@@ -175,7 +174,9 @@
     }
         
     .hero-btn {
-        width: 108px;
+        min-width: 108px;
+        max-width: 200px;
+        padding: 9px 26px 13px;
         height: 38px;
         border: 2px solid var(--btn-default-color);
         border-radius: 8px;
@@ -266,7 +267,9 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 1.28;
-    width: 134px;
+    min-width: 134px;
+    max-width: 200px;
+    padding: 10px 34px 14px;
     height: 42px;
     border-radius: 10px;
     position: relative;
