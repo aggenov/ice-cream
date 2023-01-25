@@ -98,9 +98,9 @@
     font-size: 14px;
     line-height: 1.28;   
     
-    transition: color 250ms var(--timing-function), 
-                background-color 250ms var(--timing-function),
-                box-shadow 250ms var(--timing-function);
+    transition: color var(--duration-time) var(--timing-function), 
+                background-color var(--duration-time) var(--timing-function),
+                box-shadow var(--duration-time) var(--timing-function);
 }
 
 // .imgh{
@@ -114,7 +114,7 @@
 // }
 .svg-icon{
     fill: currentColor;
-    margin-left: 6px;
+    margin-left: 4px;
 }
 
 .button-about-read:hover{
