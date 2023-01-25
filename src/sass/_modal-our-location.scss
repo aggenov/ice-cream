@@ -30,14 +30,11 @@
 }
 
 .modal-location {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
+    display: block;
+    min-width: 280px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 280px;
     padding: 28px;
 
     background-color: var(--text-light-color);
@@ -46,6 +43,16 @@
 
     transform: scale(1);
     transition: transform var(--duration-time) var(--timing-function);
+}
+
+@media screen and (min-width: 480px) {
+    .modal-location {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+        width: 400px;
+    }
 }
 
 @media screen and (min-width: 768px) {
