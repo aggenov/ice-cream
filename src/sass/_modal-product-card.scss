@@ -26,6 +26,7 @@
 
 .product-card-modal-container {
     display: block;
+    position: relative;
     min-width: 280px;
     background-color: var(--text-light-color);
     border: 2px solid var(--btn-default-color);
@@ -43,12 +44,6 @@
         width: 400px;
     }
 }
-
-// @media screen and (min-width: 320px) {
-//     .product-card-modal-container {
-//         width: 280px;
-//     }
-// }
 
 @media screen and (min-width: 768px) {
     .product-card-modal-container {

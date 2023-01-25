@@ -15,6 +15,7 @@
 }
 .franchise-modal {
     display: block;
+    position: relative;
     min-width: 280px;
     background-color: var(--text-light-color);
     border: 2px solid var(--btn-default-color);
