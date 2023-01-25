@@ -1,9 +1,41 @@
+.header-link {
+    display: block;
+    width: 40px;
+    height: 37px;
+}
+.header-logo {
+    position: absolute;
+    top: 12px;
+    left: 32px;
+}
+@media screen and (min-width: 480px) {
+    .header-link {
+            width: 48px;
+            height: 44px;
+        }
+        .header-logo {
+            top: 20px;
+            left: 20px;
+        }
+}
+@media screen and (min-width: 768px) {
+    .header-logo {
+        left: 32px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .header-link {
+        width: 60px;
+        height: 65px;
+    }
+}
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 }
+
 // .button-tablet,
 .button-buy {
     width: 152px;
@@ -92,9 +124,22 @@
     display: none;
 }
 
-
+ .menu-li {
+     margin-top: 100px;
+     font-family: 'Montserrat';
+     font-weight: 700;
+     font-size: 32px;
+     line-height: 1.21875;
+     text-decoration: none;
+     text-align: center;
+ }
 /* ----------------- Mobile 480px -----------------*/
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
+    .menu-li {
+            margin-top: 104px;
+        }
+}
+@media screen and (max-width: 768px) {
 
     .header {
         min-width: 320px;
@@ -114,14 +159,6 @@
         display: flex;
     }
     
-    .menu-li {
-        margin-top: 40px;
-        font-family: 'Montserrat';
-        font-weight: 700;
-        font-size: 32px;
-        text-decoration: none;
-        text-align: center;
-    }
     
     a {
         color: var(--text-light-color);
@@ -145,7 +182,7 @@
 
 
 /* ----------------- Tablet 768px -----------------*/
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
 
     .header {
         position: relative;
@@ -177,11 +214,8 @@
 
     .menu-li {
         margin-top: 140px;
-        font-family: 'Montserrat';
-        font-weight: 700;
         font-size: 48px;
-        text-decoration: none;
-        text-align: center;
+        line-height: 1.22917;
     }
 
     .menu-li-item {
