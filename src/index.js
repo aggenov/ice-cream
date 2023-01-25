@@ -7,3 +7,4 @@ import './js/modal-product-card';
 import './js/modal-read-more';
 import './js/snow';
 import './js/animated';
+import './js/smooth-scroll';
