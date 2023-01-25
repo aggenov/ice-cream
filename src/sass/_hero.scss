@@ -33,6 +33,41 @@
         font-size: 37px;
     }
 
+        .focus-in-expand {
+            -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+    
+        @-webkit-keyframes focus-in-expand {
+            0% {
+                letter-spacing: -0.5em;
+                -webkit-filter: blur(12px);
+                filter: blur(12px);
+                opacity: 0;
+            }
+    
+            100% {
+                -webkit-filter: blur(0px);
+                filter: blur(0px);
+                opacity: 1;
+            }
+        }
+    
+        @keyframes focus-in-expand {
+            0% {
+                letter-spacing: -0.5em;
+                -webkit-filter: blur(12px);
+                filter: blur(12px);
+                opacity: 0;
+            }
+    
+            100% {
+                -webkit-filter: blur(0px);
+                filter: blur(0px);
+                opacity: 1;
+            }
+        }
+
     .hero-cafes {
         display: none;
     }
@@ -45,15 +80,14 @@
     }
 
     .hero-btn {
-        width: 108px;
-        height: 38px;
+        min-width: 108px;
+        padding: 10px 26px 12px;
         border: 2px solid var(--btn-default-color);
         border-radius: 8px;
         background-color: transparent;
         font-weight: 600;
         font-size: 12px;
         line-height: 1.25;
-        padding: 11px 26px;
         color: var(--text-main-color);
         transition: border-color var(--duration-time) var(--timing-function);
     }
@@ -141,6 +175,41 @@
         font-size: 37px;
     }
 
+        .focus-in-expand {
+            -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+    
+        @-webkit-keyframes focus-in-expand {
+            0% {
+                letter-spacing: -0.5em;
+                -webkit-filter: blur(12px);
+                filter: blur(12px);
+                opacity: 0;
+            }
+    
+            100% {
+                -webkit-filter: blur(0px);
+                filter: blur(0px);
+                opacity: 1;
+            }
+        }
+    
+        @keyframes focus-in-expand {
+            0% {
+                letter-spacing: -0.5em;
+                -webkit-filter: blur(12px);
+                filter: blur(12px);
+                opacity: 0;
+            }
+    
+            100% {
+                -webkit-filter: blur(0px);
+                filter: blur(0px);
+                opacity: 1;
+            }
+        }
+
     .hero-numbers {
         font-weight: 900;
         font-size: 28px;
@@ -175,7 +244,9 @@
     }
         
     .hero-btn {
-        width: 108px;
+        min-width: 108px;
+        max-width: 200px;
+        padding: 9px 26px 13px;
         height: 38px;
         border: 2px solid var(--btn-default-color);
         border-radius: 8px;
@@ -190,7 +261,7 @@
 
         .hero-btn:hover {
             border-color: var(--btn-hover-color);
-            cursor: pointer;
+            cursor: url("../images/cursor-hover.png"), pointer;
         }
     
         .hero-btn:focus {
@@ -262,22 +333,24 @@
     margin-bottom: 30px;
 }
 
+
 .hero-btn {
     font-weight: 600;
     font-size: 14px;
     line-height: 1.28;
-    width: 134px;
+    min-width: 134px;
+    max-width: 200px;
+    padding: 10px 34px 14px;
     height: 42px;
     border-radius: 10px;
     position: relative;
     z-index: 2;
-    margin: 12px 34px;
     transition: border-color var(--duration-time) var(--timing-function);
 }
 
 .hero-btn:hover {
     border-color: var(--btn-hover-color);
-    cursor: pointer;
+    cursor: url("../images/cursor-hover.png"), pointer;
 }
 
 .hero-btn:focus {
@@ -345,6 +418,7 @@
     left: 652px;
     top: 56px;
 }
+
 }
 
 

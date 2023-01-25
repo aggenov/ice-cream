@@ -14,12 +14,9 @@
     transition: transform var(--duration-time) var(--timing-function);
 }
 .franchise-modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    width: 280px;
+    display: block;
+    position: relative;
+    min-width: 280px;
     background-color: var(--text-light-color);
     border: 2px solid var(--btn-default-color);
     border-radius: 10px;
@@ -27,6 +24,17 @@
     z-index: 900;
 
     padding: 28px;
+    transition: transform var(--duration-time) var(--timing-function);
+}
+
+@media screen and (min-width: 480px) {
+    .franchise-modal {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+        width: 400px;
+    }
 }
 
 @media screen and (min-width:768px) {
@@ -38,10 +46,16 @@
 .is-hidden-franchise {
     opacity: 0;
     pointer-events: none;
+    visibility: hidden;
+}
+
+.is-hidden-franchise .franchise-modal {
+    transform: translate(-50%, -50%) scale(0.9);
 }
 
 .franchise-modal-h2 {
-    width: 225px;
+    margin-right: auto;
+    margin-left: auto;
     text-align: center;
     font-family: 'Seymour One', sans-serif;
     font-weight: 400;
@@ -50,14 +64,27 @@
     margin: 0 auto 20px;
 }
 
+@media screen and (min-width: 480px) {
+    .franchise-modal-h2 {
+        width: 322px;
+
+    }
+}
+
 .franchise-modal p {
-    width: 100%;
-    width: 222px;
+    margin-right: auto;
+    margin-left: auto;
     font-weight: 400;
     font-size: 14px;
     line-height: 140%;
     color: var(--text-main-color);
     margin: 0 auto  24px;
+}
+
+@media screen and (min-width: 480px) {
+    .franchise-modal p {
+        width: 322px;
+    }
 }
 
 .franchise-modal-form {

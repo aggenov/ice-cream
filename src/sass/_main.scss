@@ -25,8 +25,7 @@ body {
     font-size: 14px;
     line-height: 1.76;
     letter-spacing: 0.04em;
-
-    // cursor: url("../images/Cursor.png"), auto;
+    overflow-x: hidden;
 }
 
 a {
@@ -53,10 +52,11 @@ img {
 
 button {
     border-color: var(--btn-default-color);
-    cursor: pointer;
+    // cursor: pointer;
 }
 button:hover {
     border-color: var(--btn-hover-color);
+    cursor: url("../images/cursor-hover.png"), pointer;
 }
 button:focus {
     border-color: var(--btn-focus-color);
@@ -77,7 +77,7 @@ button:disabled {
 
     background-color: rgba(46, 47, 66, 0.4);;
 
-    transition: opacity var(--duration-time) var(--timing-function);
+    transition: opacity var(--duration-time) var(--timing-function), visibility var(--duration-time) var(--timing-function);
 
     overflow-y: scroll;
     z-index: 999;

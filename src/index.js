@@ -8,3 +8,4 @@ import './js/modal-read-more';
 import './js/snow';
 import './js/animated';
 import './js/sound';
+import './js/smooth-scroll';
