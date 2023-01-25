@@ -323,7 +323,7 @@ address {
 
 .contacts-button-location:hover {
   background-color: var(--btn-hover-color);
-  cursor: pointer;
+  cursor: url("../images/cursor-hover.png"), pointer;
 }
 
 .contacts-button-location:focus {

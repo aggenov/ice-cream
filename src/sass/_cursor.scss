@@ -1,11 +1,11 @@
 body {
-    cursor: url("../images/Cursor.png"), auto;
+    cursor: url("../images/Cursor.png"), default;
 }
 
 a:hover {
-    cursor: url("../images/Cursor.png"), auto;
+    cursor: url("../images/cursor-hover.png"), pointer;
 }
 
 button:hover {
-    cursor: url("../images/Cursor.png"), auto;
+    cursor: url("../images/cursor-hover.png"), pointer;
 }

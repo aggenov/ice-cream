@@ -190,7 +190,7 @@
 
         .hero-btn:hover {
             border-color: var(--btn-hover-color);
-            cursor: pointer;
+            cursor: url("../images/cursor-hover.png"), pointer;
         }
     
         .hero-btn:focus {
@@ -277,7 +277,7 @@
 
 .hero-btn:hover {
     border-color: var(--btn-hover-color);
-    cursor: pointer;
+    cursor: url("../images/cursor-hover.png"), pointer;
 }
 
 .hero-btn:focus {
