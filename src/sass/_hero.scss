@@ -12,7 +12,18 @@
 
     .hero-page {
     min-height: 450px;
-    // position: relative;
+    background-image: url(../images/hero/dots.png);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: 320px 50px;
+    }
+
+    @media screen and (min-width: 320px) and (min-device-pixel-ratio:2),
+    screen and (min-width: 320px) and (min-resolution: 192dpi),
+    screen and (min-width: 320px) and (min-resolution: 2dppx) {
+    .hero-page {
+        background-image: url(../images/hero/dots@2x.png);
+    }
     }
 
 
@@ -109,17 +120,11 @@
         background: transparent;
     }
 
-        .hero-bg-dots {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-
-        }
 
     .hero-bg-ice {
         position: absolute;
         bottom: 0;
-        left: 83px;
+        right: 60px;
         }
     }
     
@@ -128,27 +133,19 @@
 @media screen and (min-width: 480px) {
     .hero {
         position: relative;
+        
     }
 
     .hero-page {
         min-height: 458px;
-        // position: relative;
+        background-position: 80% 100%;
+
     }
 
     .hero-button {
         margin-bottom: 30px;
     }
 
-
-    .hero-bg-ice {
-    left: 242px;
-    }
-
-    .hero-bg-dots {
-        position: absolute;
-        bottom: 0;
-        left: 150px;
-    }
 }
 
 @media screen and (min-width: 768px) {
@@ -159,8 +156,17 @@
     .hero-page {
         padding-top: 14px;
         min-height: 365px;
-
+        background-image: url(../images/hero/dots-tablet.png);
+        background-repeat: no-repeat;
     }
+
+        @media screen and (min-width: 768px) and (min-device-pixel-ratio:2),
+        screen and (min-width: 768px) and (min-resolution: 192dpi),
+        screen and (min-width: 768px) and (min-resolution: 2dppx) {
+        .hero-page {
+            background-image: url(../images/hero/dots-tablet.png);
+        }
+        }
 
     .hero-title {
         width: 247px;
@@ -176,8 +182,8 @@
     }
 
         .focus-in-expand {
-            -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-            animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            -webkit-animation: focus-in-expand 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: focus-in-expand 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         }
     
         @-webkit-keyframes focus-in-expand {
@@ -224,10 +230,18 @@
     }
 
     .hero-cafes {
-        position: absolute;
-        top: 32px;
-        right: 38px;
+        // position: absolute;
+        // top: 32px;
+        // right: 38px;
         text-align: right;
+        padding-top: 10px;
+    }
+
+    .hero-div {
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 54px;
     }
 
     .hero-food-court {
@@ -238,8 +252,8 @@
         display: flex;
         gap: 12px;
         align-items: center;
-        margin-top: 24px;
-        margin-top: 12px;
+        margin-bottom: 0;
+        // margin-top: 12px;
         
     }
         
@@ -305,15 +319,13 @@
         gap: 32px;
     }
 
-    .hero-bg-dots {
-        left: 0;
-    }
 
     .hero-bg-ice {
         position: absolute;
-        left: 408px;
-        top: 34px;
+        bottom: 0;
+        right: 92px;
     }
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -324,6 +336,17 @@
     .hero-page {
         padding-top: 58px;
         min-height: 614px;
+        background-image: url(../images/hero/dots-desktop.png);
+        background-size: 1200px 383px;
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio:2),
+screen and (min-width: 1200px) and (min-resolution: 192dpi),
+screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+    .hero-page 
+    {
+        background-image: url(../images/hero/dots-desktop@2x.png);
+    }
 }
 
 .hero-title {
@@ -364,7 +387,6 @@
 
 .hero-button {
     gap: 34px;
-    margin-bottom: 42px;
 }
 
 
